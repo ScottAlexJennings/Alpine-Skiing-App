@@ -1,0 +1,132 @@
+{
+    "type": "Feature",
+    "properties": {
+        "type": "lift",
+        "liftType": "t-bar",
+        "status": "operating",
+        "name": "Haglebuheisen",
+        "oneway": null,
+        "ref": null,
+        "description": null,
+        "occupancy": null,
+        "capacity": null,
+        "duration": null,
+        "bubble": null,
+        "heating": null,
+        "color": "hsl(0, 82%, 42%)",
+        "skiAreas": [
+            {
+                "properties": {
+                    "activities": [
+                        "downhill"
+                    ],
+                    "generated": false,
+                    "id": "b73a77726be854d5419f6dac30080007a93b3ba0",
+                    "location": {
+                        "iso3166_1Alpha2": "NO",
+                        "iso3166_2": null,
+                        "localized": {
+                            "en": {
+                                "country": "Norway",
+                                "region": null,
+                                "locality": "Eggedal"
+                            }
+                        }
+                    },
+                    "name": "Haglebu",
+                    "runConvention": "europe",
+                    "sources": [
+                        {
+                            "type": "skimap.org",
+                            "id": 14335
+                        }
+                    ],
+                    "status": null,
+                    "type": "skiArea",
+                    "websites": [],
+                    "statistics": {
+                        "runs": {
+                            "byActivity": {
+                                "downhill": {
+                                    "byDifficulty": {
+                                        "other": {
+                                            "count": 3,
+                                            "lengthInKm": 1.9889303173097337,
+                                            "minElevation": 840.62,
+                                            "maxElevation": 1032.1799999999998,
+                                            "combinedElevationChange": 345.25999999999954
+                                        }
+                                    }
+                                }
+                            },
+                            "minElevation": 840.62,
+                            "maxElevation": 1032.1799999999998
+                        },
+                        "lifts": {
+                            "byType": {
+                                "t-bar": {
+                                    "count": 2,
+                                    "lengthInKm": 1.628603774466904,
+                                    "minElevation": 840.62,
+                                    "maxElevation": 1032.1799999999998,
+                                    "combinedElevationChange": 295.76999999999987
+                                }
+                            },
+                            "minElevation": 840.62,
+                            "maxElevation": 1032.1799999999998
+                        },
+                        "maxElevation": 1032.1799999999998,
+                        "minElevation": 840.62
+                    }
+                },
+                "type": "Feature",
+                "geometry": {
+                    "coordinates": [
+                        9.189909362792946,
+                        60.34506752724113
+                    ],
+                    "type": "Point"
+                }
+            }
+        ],
+        "sources": [
+            {
+                "type": "openstreetmap",
+                "id": "way/262128007"
+            }
+        ],
+        "location": null,
+        "websites": [],
+        "id": "5548f6b6c0343b5158461796ea36173dd2ac0482"
+    },
+    "geometry": {
+        "type": "LineString",
+        "coordinates": [
+            [
+                9.1919601,
+                60.345122300000014,
+                840.62
+            ],
+            [
+                9.209148,
+                60.3461751,
+                1022.6800000000001
+            ],
+            [
+                9.2101847,
+                60.3462386,
+                1024.94
+            ],
+            [
+                9.210877199999999,
+                60.346283799999995,
+                1030.1799999999998
+            ],
+            [
+                9.21105,
+                60.346291599999994,
+                1032.1799999999998
+            ]
+        ]
+    }
+}
