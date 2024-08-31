@@ -1,0 +1,69 @@
+[ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\AlpineAssistApp.mc"; @line = 1; ]
+import Toybox.Application;
+[ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\AlpineAssistApp.mc"; @line = 2; ]
+import Toybox.Lang;
+[ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\AlpineAssistApp.mc"; @line = 3; ]
+import Toybox.WatchUi;
+[ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\AlpineAssistApp.mc"; @line = 5; @position = 11; ]
+var data as Data or Null;
+[ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\AlpineAssistApp.mc"; @line = 7; ]
+class AlpineAssistApp extends Application.AppBase{
+    [ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\AlpineAssistApp.mc"; @line = 7; ]
+    <init> {
+    }
+    [ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\AlpineAssistApp.mc"; @line = 7; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\AlpineAssistApp.mc"; @line = 9; ]
+    public
+    function initialize() as Void {
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_AlpineAssistApp_mc_9_33_11_4_start:
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\AlpineAssistApp.mc" 10 8 ]
+        %tmp.2 = getv ? :AppBase;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_AlpineAssistApp_mc_9_33_11_4_stop:
+    }
+    [ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\AlpineAssistApp.mc"; @line = 14; ]
+    public
+    function onStart(state as Dictionary or Null) as Void {
+    }
+    [ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\AlpineAssistApp.mc"; @line = 18; ]
+    public
+    function onStop(state as Dictionary or Null) as Void {
+    }
+    [ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\AlpineAssistApp.mc"; @line = 22; ]
+    public
+    function getInitialView() as [Views] or [Views, InputDelegates] {
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_AlpineAssistApp_mc_22_75_24_4_start:
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\AlpineAssistApp.mc" 23 8 ]
+        %tmp.1 = newa 2;
+        %tmp.5 = getm $;
+        %tmp.6 = getv %tmp.5 :AlpineAssistMainView;
+        %tmp.2 = newc %tmp.6 ();
+        %tmp.7 = dup %tmp.1;
+        %tmp.8 = aputv %tmp.7 0 %tmp.2;
+        %tmp.12 = getm $;
+        %tmp.13 = getv %tmp.12 :AlpineAssistMainDelegate;
+        %tmp.9 = newc %tmp.13 ();
+        %tmp.14 = dup %tmp.8;
+        %tmp.15 = aputv %tmp.14 1 %tmp.9;
+        ret %tmp.15;
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_AlpineAssistApp_mc_22_75_24_4_stop:
+    }
+}
+[ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\AlpineAssistApp.mc"; @line = 28; ]
+function getApp() as AlpineAssistApp {
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_AlpineAssistApp_mc_28_37_30_0_start:
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\AlpineAssistApp.mc" 29 4 ]
+    %tmp.1 = getm $.Toybox.Application;
+    %tmp.2 = getv function %tmp.1 :getApp;
+    %tmp.3 = invoke %tmp.1 %tmp.2();
+    %tmp.4 = as %tmp.3 AlpineAssistApp;
+    ret %tmp.4;
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_AlpineAssistApp_mc_28_37_30_0_stop:
+}
+[ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\AlpineAssistApp.mc"; @line = 1; ]
+<init> {
+}

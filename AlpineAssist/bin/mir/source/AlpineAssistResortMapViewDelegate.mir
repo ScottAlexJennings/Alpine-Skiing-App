@@ -1,0 +1,80 @@
+[ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\AlpineAssistResortMapViewDelegate.mc"; @line = 1; ]
+using Toybox.WatchUi as :Ui;
+[ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\AlpineAssistResortMapViewDelegate.mc"; @line = 3; ]
+class AlpineAssistResortMapDelegate extends Ui.BehaviorDelegate{
+    [ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\AlpineAssistResortMapViewDelegate.mc"; @line = 3; ]
+    <init> {
+    }
+    [ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\AlpineAssistResortMapViewDelegate.mc"; @line = 3; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\AlpineAssistResortMapViewDelegate.mc"; @line = 5; @position = 8; ]
+    var mView;
+    [ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\AlpineAssistResortMapViewDelegate.mc"; @line = 7; ]
+    function initialize(view) as Void {
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_AlpineAssistResortMapViewDelegate_mc_7_30_10_4_start:
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\AlpineAssistResortMapViewDelegate.mc" 8 8 ]
+        %tmp.2 = getv ? :BehaviorDelegate;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\AlpineAssistResortMapViewDelegate.mc" 9 8 ]
+        %tmp.5 = lgetv %view;
+        putv self :mView %tmp.5;
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_AlpineAssistResortMapViewDelegate_mc_7_30_10_4_stop:
+    }
+    [ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\AlpineAssistResortMapViewDelegate.mc"; @line = 12; ]
+    function onBack() {
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_AlpineAssistResortMapViewDelegate_mc_12_22_21_4_start:
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\AlpineAssistResortMapViewDelegate.mc" 14 8 ]
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_AlpineAssistResortMapViewDelegate_mc_14_8_19_8_if_stmt:
+        %tmp.2 = getv ? :mView;
+        %tmp.3 = getv function %tmp.2 :getMapMode;
+        %tmp.4 = invoke %tmp.2 %tmp.3();
+        %tmp.5 = getm $.Toybox.WatchUi;
+        %tmp.6 = getv %tmp.5 :MAP_MODE_PREVIEW;
+        %tmp.7 = eq %tmp.4 %tmp.6;
+        bf %tmp.7 @C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_AlpineAssistResortMapViewDelegate_mc_14_8_19_8_if_false;
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_AlpineAssistResortMapViewDelegate_mc_14_8_19_8_if_true:
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_AlpineAssistResortMapViewDelegate_mc_14_54_16_8_start:
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\AlpineAssistResortMapViewDelegate.mc" 15 12 ]
+        %tmp.8 = getm $.Toybox.WatchUi;
+        %tmp.9 = getv function %tmp.8 :popView;
+        %tmp.10 = getm $.Toybox.WatchUi;
+        %tmp.11 = getv %tmp.10 :SLIDE_UP;
+        invoke %tmp.8 %tmp.9(%tmp.11);
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_AlpineAssistResortMapViewDelegate_mc_14_54_16_8_stop:
+        goto @C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_AlpineAssistResortMapViewDelegate_mc_14_8_19_8_if_end;
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_AlpineAssistResortMapViewDelegate_mc_14_8_19_8_if_false:
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_AlpineAssistResortMapViewDelegate_mc_16_15_19_8_start:
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\AlpineAssistResortMapViewDelegate.mc" 18 12 ]
+        %tmp.13 = getv ? :mView;
+        %tmp.14 = getv function %tmp.13 :setMapMode;
+        %tmp.15 = getm $.Toybox.WatchUi;
+        %tmp.16 = getv %tmp.15 :MAP_MODE_PREVIEW;
+        invoke %tmp.13 %tmp.14(%tmp.16);
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_AlpineAssistResortMapViewDelegate_mc_16_15_19_8_stop:
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_AlpineAssistResortMapViewDelegate_mc_14_8_19_8_if_end:
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\AlpineAssistResortMapViewDelegate.mc" 20 8 ]
+        %tmp.17 = true;
+        ret %tmp.17;
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_AlpineAssistResortMapViewDelegate_mc_12_22_21_4_stop:
+    }
+    [ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\AlpineAssistResortMapViewDelegate.mc"; @line = 23; ]
+    function onSelect() {
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_AlpineAssistResortMapViewDelegate_mc_23_24_27_4_start:
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\AlpineAssistResortMapViewDelegate.mc" 25 8 ]
+        %tmp.2 = getv ? :mView;
+        %tmp.3 = getv function %tmp.2 :setMapMode;
+        %tmp.4 = getm $.Toybox.WatchUi;
+        %tmp.5 = getv %tmp.4 :MAP_MODE_BROWSE;
+        invoke %tmp.2 %tmp.3(%tmp.5);
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\AlpineAssistResortMapViewDelegate.mc" 26 8 ]
+        %tmp.6 = true;
+        ret %tmp.6;
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_AlpineAssistResortMapViewDelegate_mc_23_24_27_4_stop:
+    }
+}
+[ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\AlpineAssistResortMapViewDelegate.mc"; @line = 1; ]
+<init> {
+}

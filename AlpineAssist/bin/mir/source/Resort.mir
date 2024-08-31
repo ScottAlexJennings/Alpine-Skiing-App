@@ -1,0 +1,42 @@
+[ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\Resort.mc"; @line = 1; ]
+import Toybox.Lang;
+[ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\Resort.mc"; @line = 3; ]
+class Resource{
+    [ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\Resort.mc"; @line = 3; ]
+    <init> {
+    }
+    [ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\Resort.mc"; @line = 3; ]
+    static
+    <init> {
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\Resort.mc" 5 15 ]
+        %tmp.1 = newa 3;
+        %tmp.2 = 9.2082146;
+        %tmp.3 = dup %tmp.1;
+        %tmp.4 = aputv %tmp.3 0 %tmp.2;
+        %tmp.5 = 60.3407457;
+        %tmp.6 = dup %tmp.4;
+        %tmp.7 = aputv %tmp.6 1 %tmp.5;
+        %tmp.8 = 922.54;
+        %tmp.9 = dup %tmp.7;
+        %tmp.10 = aputv %tmp.9 2 %tmp.8;
+        putv self :southLift %tmp.10;
+    }
+    [ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\Resort.mc"; @line = 5; @position = 15; ]
+    static
+    var southLift as Array<Float>;
+    [ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\Resort.mc"; @line = 7; @position = 15; ]
+    static
+    var num as Number = 8;
+    [ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\Resort.mc"; @line = 9; ]
+    public
+    function getNum() as Number {
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_Resort_mc_9_39_11_4_start:
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\Resort.mc" 10 8 ]
+        %tmp.2 = getv ? :num;
+        ret %tmp.2;
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_Resort_mc_9_39_11_4_stop:
+    }
+}
+[ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\Resort.mc"; @line = 1; ]
+<init> {
+}

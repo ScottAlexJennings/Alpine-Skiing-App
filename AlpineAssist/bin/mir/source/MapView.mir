@@ -1,0 +1,74 @@
+[ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\MapView.mc"; @line = 1; ]
+import Toybox.Graphics;
+[ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\MapView.mc"; @line = 2; ]
+import Toybox.Lang;
+[ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\MapView.mc"; @line = 3; ]
+import Toybox.Position;
+[ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\MapView.mc"; @line = 4; ]
+import Toybox.System;
+[ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\MapView.mc"; @line = 5; ]
+import Toybox.WatchUi;
+[ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\MapView.mc"; @line = 8; ]
+class MapView extends WatchUi.MapView{
+    [ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\MapView.mc"; @line = 8; ]
+    <init> {
+    }
+    [ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\MapView.mc"; @line = 8; ]
+    static
+    <init> {
+    }
+    //! Constructor
+    [ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\MapView.mc"; @line = 11; ]
+    public
+    function initialize() as Void {
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_MapView_mc_11_33_15_4_start:
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\MapView.mc" 12 8 ]
+        %tmp.2 = getv ? :MapView;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\MapView.mc" 14 8 ]
+        %tmp.4 = self;
+        %tmp.5 = getv function %tmp.4 :setMapMode;
+        %tmp.6 = getm $.Toybox.WatchUi;
+        %tmp.7 = getv %tmp.6 :MAP_MODE_PREVIEW;
+        invoke %tmp.4 %tmp.5(%tmp.7);
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_MapView_mc_11_33_15_4_stop:
+    }
+    //! Load your resources here
+    //! @param dc Device context
+    [ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\MapView.mc"; @line = 19; ]
+    public
+    function onLayout(dc as Dc) as Void {
+    }
+    //! Called when this View is brought to the foreground. Restore
+    //! the state of this View and prepare it to be shown. This includes
+    //! loading resources into memory.
+    [ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\MapView.mc"; @line = 25; ]
+    public
+    function onShow() as Void {
+    }
+    //! Update the view
+    //! @param dc Device context
+    [ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\MapView.mc"; @line = 30; ]
+    public
+    function onUpdate(dc as Dc) as Void {
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_MapView_mc_30_47_41_4_start:
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\MapView.mc" 32 8 ]
+        %tmp.2 = getv ? :MapView;
+        %tmp.3 = getv function %tmp.2 :onUpdate;
+        %tmp.5 = lgetv %dc;
+        invoke %tmp.2 %tmp.3(%tmp.5);
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\MapView.mc" 33 8 ]
+        %tmp.6 = lgetv %dc;
+        %tmp.7 = getv function %tmp.6 :setColor;
+        %tmp.8 = getm $.Toybox.Graphics;
+        %tmp.9 = getv %tmp.8 :COLOR_BLACK;
+        %tmp.10 = getm $.Toybox.Graphics;
+        %tmp.11 = getv %tmp.10 :COLOR_TRANSPARENT;
+        invoke %tmp.6 %tmp.7(%tmp.9, %tmp.11);
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_MapView_mc_30_47_41_4_stop:
+    }
+}
+[ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\MapView.mc"; @line = 1; ]
+<init> {
+}

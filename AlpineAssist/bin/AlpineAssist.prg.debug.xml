@@ -1,0 +1,642 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+    <manifest filename="C:\Users\scott\Documents\Garmin Apps\AlpineAssist\manifest.xml"/>
+    <pcToLineNum>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\MainDelegate.mc" id="4" lineNum="5" parent="globals" pc="268435460" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\MainDelegate.mc" id="4" lineNum="6" parent="globals" pc="268435474" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\App.mc" id="13" lineNum="7" parent="globals/App" pc="268435489" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\ResortsDelegate.mc" id="14" lineNum="7" parent="globals/resortsDelegate" pc="268435508" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\App.mc" id="15" lineNum="27" parent="globals" pc="268435527" symbol="getApp"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\App.mc" id="15" lineNum="28" parent="globals" pc="268435537" symbol="getApp"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\MainView.mc" id="16" lineNum="4" parent="globals/MainView" pc="268435553" symbol="&lt;init&gt;"/>
+        <entry filename="c:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\bin\\gen\\006-B3906-00\\source\\Rez.mcgen" id="17" lineNum="7" parent="globals/Rez" pc="268435572" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\Resource\\Trysil.mc" id="18" lineNum="5" parent="globals/Trysil/&lt;statics&gt;" pc="268435596" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\Resource\\Trysil.mc" id="18" lineNum="3" parent="globals/Trysil/&lt;statics&gt;" pc="268435596" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\Resource\\Trysil.mc" id="18" lineNum="46" parent="globals/Trysil/&lt;statics&gt;" pc="268445827" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\MainDelegate.mc" id="19" lineNum="8" parent="globals/MainDelegate" pc="268544860" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\MainDelegate.mc" id="19" lineNum="10" parent="globals/MainDelegate" pc="268544878" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\MainDelegate.mc" id="19" lineNum="11" parent="globals/MainDelegate" pc="268544901" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\Resource\\Southampton.mc" id="20" lineNum="4" parent="globals/Southampton/&lt;statics&gt;" pc="268544927" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\Resource\\Southampton.mc" id="20" lineNum="6" parent="globals/Southampton/&lt;statics&gt;" pc="268544927" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\Resource\\Southampton.mc" id="20" lineNum="12" parent="globals/Southampton/&lt;statics&gt;" pc="268545446" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="21" lineNum="8" parent="globals/FeatureDelegate" pc="268547305" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\MapView.mc" id="22" lineNum="8" parent="globals/MapView" pc="268547324" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\DecisonDelegate.mc" id="23" lineNum="8" parent="globals/decisonDelegate" pc="268547343" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\DecisonDelegate.mc" id="23" lineNum="10" parent="globals/decisonDelegate" pc="268547361" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\DecisonDelegate.mc" id="23" lineNum="11" parent="globals/decisonDelegate" pc="268547384" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\Resource\\Haglebu.mc" id="24" lineNum="4" parent="globals/Haglebu/&lt;statics&gt;" pc="268547410" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\Resource\\Haglebu.mc" id="24" lineNum="6" parent="globals/Haglebu/&lt;statics&gt;" pc="268547410" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\Resource\\Haglebu.mc" id="24" lineNum="12" parent="globals/Haglebu/&lt;statics&gt;" pc="268547929" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\MapDelegate.mc" id="25" lineNum="5" parent="globals/MapDelegate" pc="268549788" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\App.mc" id="26" lineNum="13" parent="globals/App" pc="268549807" symbol="onStart"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\App.mc" id="27" lineNum="21" parent="globals/App" pc="268549810" symbol="getInitialView"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\App.mc" id="27" lineNum="22" parent="globals/App" pc="268549812" symbol="getInitialView"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\App.mc" id="28" lineNum="9" parent="globals/App" pc="268549887" symbol="initialize"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\App.mc" id="28" lineNum="10" parent="globals/App" pc="268549889" symbol="initialize"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\App.mc" id="29" lineNum="17" parent="globals/App" pc="268549908" symbol="onStop"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\ResortsDelegate.mc" id="30" lineNum="123" parent="globals/resortsDelegate" pc="268549911" symbol="onBack"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\ResortsDelegate.mc" id="30" lineNum="124" parent="globals/resortsDelegate" pc="268549913" symbol="onBack"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\ResortsDelegate.mc" id="31" lineNum="22" parent="globals/resortsDelegate" pc="268549935" symbol="getPosition"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\ResortsDelegate.mc" id="31" lineNum="23" parent="globals/resortsDelegate" pc="268549937" symbol="getPosition"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\ResortsDelegate.mc" id="32" lineNum="15" parent="globals/resortsDelegate" pc="268549975" symbol="onPosition"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\ResortsDelegate.mc" id="32" lineNum="16" parent="globals/resortsDelegate" pc="268549977" symbol="onPosition"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\ResortsDelegate.mc" id="32" lineNum="17" parent="globals/resortsDelegate" pc="268550002" symbol="onPosition"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\ResortsDelegate.mc" id="32" lineNum="18" parent="globals/resortsDelegate" pc="268550038" symbol="onPosition"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\ResortsDelegate.mc" id="33" lineNum="11" parent="globals/resortsDelegate" pc="268550075" symbol="initialize"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\ResortsDelegate.mc" id="33" lineNum="12" parent="globals/resortsDelegate" pc="268550077" symbol="initialize"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\ResortsDelegate.mc" id="34" lineNum="26" parent="globals/resortsDelegate" pc="268550096" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\ResortsDelegate.mc" id="34" lineNum="27" parent="globals/resortsDelegate" pc="268550100" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\ResortsDelegate.mc" id="34" lineNum="28" parent="globals/resortsDelegate" pc="268550113" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\ResortsDelegate.mc" id="34" lineNum="31" parent="globals/resortsDelegate" pc="268550141" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\ResortsDelegate.mc" id="34" lineNum="32" parent="globals/resortsDelegate" pc="268550174" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\ResortsDelegate.mc" id="34" lineNum="33" parent="globals/resortsDelegate" pc="268550202" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\ResortsDelegate.mc" id="34" lineNum="35" parent="globals/resortsDelegate" pc="268550232" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\ResortsDelegate.mc" id="34" lineNum="41" parent="globals/resortsDelegate" pc="268550287" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\ResortsDelegate.mc" id="34" lineNum="42" parent="globals/resortsDelegate" pc="268550306" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\ResortsDelegate.mc" id="34" lineNum="44" parent="globals/resortsDelegate" pc="268550327" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\ResortsDelegate.mc" id="34" lineNum="48" parent="globals/resortsDelegate" pc="268550339" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\ResortsDelegate.mc" id="34" lineNum="49" parent="globals/resortsDelegate" pc="268550386" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\ResortsDelegate.mc" id="34" lineNum="50" parent="globals/resortsDelegate" pc="268550415" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\ResortsDelegate.mc" id="34" lineNum="53" parent="globals/resortsDelegate" pc="268550444" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\ResortsDelegate.mc" id="34" lineNum="56" parent="globals/resortsDelegate" pc="268550498" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\ResortsDelegate.mc" id="34" lineNum="57" parent="globals/resortsDelegate" pc="268550538" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\ResortsDelegate.mc" id="34" lineNum="60" parent="globals/resortsDelegate" pc="268550619" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\ResortsDelegate.mc" id="34" lineNum="61" parent="globals/resortsDelegate" pc="268550659" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\ResortsDelegate.mc" id="34" lineNum="63" parent="globals/resortsDelegate" pc="268550740" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\ResortsDelegate.mc" id="34" lineNum="65" parent="globals/resortsDelegate" pc="268550761" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\ResortsDelegate.mc" id="34" lineNum="67" parent="globals/resortsDelegate" pc="268550782" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\ResortsDelegate.mc" id="34" lineNum="70" parent="globals/resortsDelegate" pc="268550834" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\ResortsDelegate.mc" id="34" lineNum="72" parent="globals/resortsDelegate" pc="268550853" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\ResortsDelegate.mc" id="34" lineNum="73" parent="globals/resortsDelegate" pc="268550900" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\ResortsDelegate.mc" id="34" lineNum="74" parent="globals/resortsDelegate" pc="268550929" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\ResortsDelegate.mc" id="34" lineNum="77" parent="globals/resortsDelegate" pc="268550958" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\ResortsDelegate.mc" id="34" lineNum="80" parent="globals/resortsDelegate" pc="268551012" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\ResortsDelegate.mc" id="34" lineNum="81" parent="globals/resortsDelegate" pc="268551052" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\ResortsDelegate.mc" id="34" lineNum="84" parent="globals/resortsDelegate" pc="268551133" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\ResortsDelegate.mc" id="34" lineNum="85" parent="globals/resortsDelegate" pc="268551173" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\ResortsDelegate.mc" id="34" lineNum="87" parent="globals/resortsDelegate" pc="268551254" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\ResortsDelegate.mc" id="34" lineNum="88" parent="globals/resortsDelegate" pc="268551275" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\ResortsDelegate.mc" id="34" lineNum="90" parent="globals/resortsDelegate" pc="268551296" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\ResortsDelegate.mc" id="34" lineNum="92" parent="globals/resortsDelegate" pc="268551317" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\ResortsDelegate.mc" id="34" lineNum="94" parent="globals/resortsDelegate" pc="268551369" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\ResortsDelegate.mc" id="34" lineNum="95" parent="globals/resortsDelegate" pc="268551388" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\ResortsDelegate.mc" id="34" lineNum="96" parent="globals/resortsDelegate" pc="268551435" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\ResortsDelegate.mc" id="34" lineNum="97" parent="globals/resortsDelegate" pc="268551464" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\ResortsDelegate.mc" id="34" lineNum="100" parent="globals/resortsDelegate" pc="268551493" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\ResortsDelegate.mc" id="34" lineNum="103" parent="globals/resortsDelegate" pc="268551547" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\ResortsDelegate.mc" id="34" lineNum="104" parent="globals/resortsDelegate" pc="268551587" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\ResortsDelegate.mc" id="34" lineNum="108" parent="globals/resortsDelegate" pc="268551668" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\ResortsDelegate.mc" id="34" lineNum="109" parent="globals/resortsDelegate" pc="268551708" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\ResortsDelegate.mc" id="34" lineNum="111" parent="globals/resortsDelegate" pc="268551789" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\ResortsDelegate.mc" id="34" lineNum="112" parent="globals/resortsDelegate" pc="268551810" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\ResortsDelegate.mc" id="34" lineNum="114" parent="globals/resortsDelegate" pc="268551831" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\ResortsDelegate.mc" id="34" lineNum="116" parent="globals/resortsDelegate" pc="268551852" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\ResortsDelegate.mc" id="34" lineNum="119" parent="globals/resortsDelegate" pc="268551904" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\MainView.mc" id="36" lineNum="13" parent="globals/MainView" pc="268551921" symbol="onLayout"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\MainView.mc" id="36" lineNum="14" parent="globals/MainView" pc="268551923" symbol="onLayout"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\MainView.mc" id="37" lineNum="8" parent="globals/MainView" pc="268551965" symbol="initialize"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\MainView.mc" id="37" lineNum="9" parent="globals/MainView" pc="268551967" symbol="initialize"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\MainView.mc" id="39" lineNum="24" parent="globals/MainView" pc="268551986" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\MainView.mc" id="39" lineNum="26" parent="globals/MainView" pc="268551988" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\MainView.mc" id="40" lineNum="35" parent="globals/MainView" pc="268552009" symbol="setPosition"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\MainView.mc" id="40" lineNum="36" parent="globals/MainView" pc="268552011" symbol="setPosition"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\MainView.mc" id="40" lineNum="37" parent="globals/MainView" pc="268552027" symbol="setPosition"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\MainDelegate.mc" id="42" lineNum="17" parent="globals/MainDelegate" pc="268552044" symbol="onMenu"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\MainDelegate.mc" id="42" lineNum="19" parent="globals/MainDelegate" pc="268552048" symbol="onMenu"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\MainDelegate.mc" id="42" lineNum="20" parent="globals/MainDelegate" pc="268552095" symbol="onMenu"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\MainDelegate.mc" id="42" lineNum="23" parent="globals/MainDelegate" pc="268552102" symbol="onMenu"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\MainDelegate.mc" id="42" lineNum="24" parent="globals/MainDelegate" pc="268552115" symbol="onMenu"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\MainDelegate.mc" id="42" lineNum="25" parent="globals/MainDelegate" pc="268552128" symbol="onMenu"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\MainDelegate.mc" id="42" lineNum="27" parent="globals/MainDelegate" pc="268552163" symbol="onMenu"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\MainDelegate.mc" id="42" lineNum="28" parent="globals/MainDelegate" pc="268552191" symbol="onMenu"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\MainDelegate.mc" id="42" lineNum="30" parent="globals/MainDelegate" pc="268552210" symbol="onMenu"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\MainDelegate.mc" id="42" lineNum="31" parent="globals/MainDelegate" pc="268552284" symbol="onMenu"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\MainDelegate.mc" id="42" lineNum="32" parent="globals/MainDelegate" pc="268552309" symbol="onMenu"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\MainDelegate.mc" id="42" lineNum="35" parent="globals/MainDelegate" pc="268552325" symbol="onMenu"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\MainDelegate.mc" id="42" lineNum="39" parent="globals/MainDelegate" pc="268552348" symbol="onMenu"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\MainDelegate.mc" id="42" lineNum="40" parent="globals/MainDelegate" pc="268552398" symbol="onMenu"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\MainDelegate.mc" id="42" lineNum="41" parent="globals/MainDelegate" pc="268552448" symbol="onMenu"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\MainDelegate.mc" id="42" lineNum="44" parent="globals/MainDelegate" pc="268552498" symbol="onMenu"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\MainDelegate.mc" id="42" lineNum="45" parent="globals/MainDelegate" pc="268552547" symbol="onMenu"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\MainDelegate.mc" id="43" lineNum="52" parent="globals/MainDelegate" pc="268552550" symbol="getContentOfResort"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\MainDelegate.mc" id="43" lineNum="53" parent="globals/MainDelegate" pc="268552552" symbol="getContentOfResort"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\MainDelegate.mc" id="44" lineNum="48" parent="globals/MainDelegate" pc="268552561" symbol="getResortNames"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\MainDelegate.mc" id="44" lineNum="49" parent="globals/MainDelegate" pc="268552563" symbol="getResortNames"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\MainDelegate.mc" id="45" lineNum="13" parent="globals/MainDelegate" pc="268552572" symbol="initialize"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\MainDelegate.mc" id="45" lineNum="14" parent="globals/MainDelegate" pc="268552574" symbol="initialize"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="47" lineNum="183" parent="globals/FeatureDelegate" pc="268552593" symbol="onBack"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="47" lineNum="184" parent="globals/FeatureDelegate" pc="268552595" symbol="onBack"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="48" lineNum="12" parent="globals/FeatureDelegate" pc="268552617" symbol="initialize"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="48" lineNum="13" parent="globals/FeatureDelegate" pc="268552619" symbol="initialize"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="49" lineNum="187" parent="globals/FeatureDelegate" pc="268552638" symbol="getMapType"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="49" lineNum="188" parent="globals/FeatureDelegate" pc="268552640" symbol="getMapType"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="16" parent="globals/FeatureDelegate" pc="268552649" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="17" parent="globals/FeatureDelegate" pc="268552653" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="19" parent="globals/FeatureDelegate" pc="268552666" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="20" parent="globals/FeatureDelegate" pc="268552685" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="21" parent="globals/FeatureDelegate" pc="268552706" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="24" parent="globals/FeatureDelegate" pc="268552734" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="27" parent="globals/FeatureDelegate" pc="268552742" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="28" parent="globals/FeatureDelegate" pc="268552843" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="29" parent="globals/FeatureDelegate" pc="268552904" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="30" parent="globals/FeatureDelegate" pc="268552921" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="33" parent="globals/FeatureDelegate" pc="268552935" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="34" parent="globals/FeatureDelegate" pc="268553036" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="35" parent="globals/FeatureDelegate" pc="268553097" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="36" parent="globals/FeatureDelegate" pc="268553114" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="39" parent="globals/FeatureDelegate" pc="268553128" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="40" parent="globals/FeatureDelegate" pc="268553229" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="41" parent="globals/FeatureDelegate" pc="268553290" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="42" parent="globals/FeatureDelegate" pc="268553307" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="45" parent="globals/FeatureDelegate" pc="268553321" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="46" parent="globals/FeatureDelegate" pc="268553422" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="47" parent="globals/FeatureDelegate" pc="268553483" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="48" parent="globals/FeatureDelegate" pc="268553500" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="51" parent="globals/FeatureDelegate" pc="268553514" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="52" parent="globals/FeatureDelegate" pc="268553615" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="53" parent="globals/FeatureDelegate" pc="268553676" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="54" parent="globals/FeatureDelegate" pc="268553693" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="57" parent="globals/FeatureDelegate" pc="268553707" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="60" parent="globals/FeatureDelegate" pc="268553721" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="61" parent="globals/FeatureDelegate" pc="268553796" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="62" parent="globals/FeatureDelegate" pc="268553871" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="65" parent="globals/FeatureDelegate" pc="268553887" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="67" parent="globals/FeatureDelegate" pc="268553957" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="69" parent="globals/FeatureDelegate" pc="268554011" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="71" parent="globals/FeatureDelegate" pc="268554030" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="72" parent="globals/FeatureDelegate" pc="268554077" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="73" parent="globals/FeatureDelegate" pc="268554131" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="75" parent="globals/FeatureDelegate" pc="268554181" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="77" parent="globals/FeatureDelegate" pc="268554233" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="78" parent="globals/FeatureDelegate" pc="268554252" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="79" parent="globals/FeatureDelegate" pc="268554273" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="82" parent="globals/FeatureDelegate" pc="268554301" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="85" parent="globals/FeatureDelegate" pc="268554309" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="86" parent="globals/FeatureDelegate" pc="268554410" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="87" parent="globals/FeatureDelegate" pc="268554471" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="88" parent="globals/FeatureDelegate" pc="268554488" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="91" parent="globals/FeatureDelegate" pc="268554502" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="92" parent="globals/FeatureDelegate" pc="268554603" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="93" parent="globals/FeatureDelegate" pc="268554664" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="94" parent="globals/FeatureDelegate" pc="268554681" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="97" parent="globals/FeatureDelegate" pc="268554695" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="98" parent="globals/FeatureDelegate" pc="268554796" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="99" parent="globals/FeatureDelegate" pc="268554857" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="100" parent="globals/FeatureDelegate" pc="268554874" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="103" parent="globals/FeatureDelegate" pc="268554888" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="104" parent="globals/FeatureDelegate" pc="268554989" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="105" parent="globals/FeatureDelegate" pc="268555050" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="106" parent="globals/FeatureDelegate" pc="268555067" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="109" parent="globals/FeatureDelegate" pc="268555081" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="110" parent="globals/FeatureDelegate" pc="268555182" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="111" parent="globals/FeatureDelegate" pc="268555243" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="112" parent="globals/FeatureDelegate" pc="268555260" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="115" parent="globals/FeatureDelegate" pc="268555274" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="118" parent="globals/FeatureDelegate" pc="268555288" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="119" parent="globals/FeatureDelegate" pc="268555363" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="120" parent="globals/FeatureDelegate" pc="268555438" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="123" parent="globals/FeatureDelegate" pc="268555454" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="126" parent="globals/FeatureDelegate" pc="268555524" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="128" parent="globals/FeatureDelegate" pc="268555578" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="129" parent="globals/FeatureDelegate" pc="268555597" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="130" parent="globals/FeatureDelegate" pc="268555618" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="133" parent="globals/FeatureDelegate" pc="268555646" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="136" parent="globals/FeatureDelegate" pc="268555654" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="137" parent="globals/FeatureDelegate" pc="268555755" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="138" parent="globals/FeatureDelegate" pc="268555816" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="139" parent="globals/FeatureDelegate" pc="268555833" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="142" parent="globals/FeatureDelegate" pc="268555847" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="143" parent="globals/FeatureDelegate" pc="268555948" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="144" parent="globals/FeatureDelegate" pc="268556009" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="145" parent="globals/FeatureDelegate" pc="268556026" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="148" parent="globals/FeatureDelegate" pc="268556040" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="149" parent="globals/FeatureDelegate" pc="268556141" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="150" parent="globals/FeatureDelegate" pc="268556202" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="151" parent="globals/FeatureDelegate" pc="268556219" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="154" parent="globals/FeatureDelegate" pc="268556233" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="155" parent="globals/FeatureDelegate" pc="268556334" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="156" parent="globals/FeatureDelegate" pc="268556395" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="157" parent="globals/FeatureDelegate" pc="268556412" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="160" parent="globals/FeatureDelegate" pc="268556426" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="161" parent="globals/FeatureDelegate" pc="268556527" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="162" parent="globals/FeatureDelegate" pc="268556588" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="164" parent="globals/FeatureDelegate" pc="268556605" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="165" parent="globals/FeatureDelegate" pc="268556619" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="168" parent="globals/FeatureDelegate" pc="268556633" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="169" parent="globals/FeatureDelegate" pc="268556708" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="170" parent="globals/FeatureDelegate" pc="268556783" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="173" parent="globals/FeatureDelegate" pc="268556799" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="176" parent="globals/FeatureDelegate" pc="268556869" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\FeatureDelegate.mc" id="50" lineNum="178" parent="globals/FeatureDelegate" pc="268556923" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\MapView.mc" id="52" lineNum="19" parent="globals/MapView" pc="268556940" symbol="onLayout"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\MapView.mc" id="53" lineNum="11" parent="globals/MapView" pc="268556943" symbol="initialize"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\MapView.mc" id="53" lineNum="12" parent="globals/MapView" pc="268556945" symbol="initialize"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\MapView.mc" id="53" lineNum="14" parent="globals/MapView" pc="268556963" symbol="initialize"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\MapView.mc" id="54" lineNum="30" parent="globals/MapView" pc="268556981" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\MapView.mc" id="54" lineNum="32" parent="globals/MapView" pc="268556983" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\MapView.mc" id="54" lineNum="33" parent="globals/MapView" pc="268557003" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\DecisonDelegate.mc" id="55" lineNum="29" parent="globals/decisonDelegate" pc="268557026" symbol="onBack"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\DecisonDelegate.mc" id="55" lineNum="30" parent="globals/decisonDelegate" pc="268557028" symbol="onBack"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\DecisonDelegate.mc" id="56" lineNum="13" parent="globals/decisonDelegate" pc="268557050" symbol="initialize"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\DecisonDelegate.mc" id="56" lineNum="14" parent="globals/decisonDelegate" pc="268557052" symbol="initialize"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\DecisonDelegate.mc" id="57" lineNum="17" parent="globals/decisonDelegate" pc="268557071" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\DecisonDelegate.mc" id="57" lineNum="18" parent="globals/decisonDelegate" pc="268557075" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\DecisonDelegate.mc" id="57" lineNum="20" parent="globals/decisonDelegate" pc="268557088" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\DecisonDelegate.mc" id="57" lineNum="22" parent="globals/decisonDelegate" pc="268557107" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\DecisonDelegate.mc" id="57" lineNum="25" parent="globals/decisonDelegate" pc="268557143" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\MapDelegate.mc" id="59" lineNum="18" parent="globals/MapDelegate" pc="268557160" symbol="onBack"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\MapDelegate.mc" id="59" lineNum="20" parent="globals/MapDelegate" pc="268557162" symbol="onBack"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\MapDelegate.mc" id="59" lineNum="21" parent="globals/MapDelegate" pc="268557188" symbol="onBack"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\MapDelegate.mc" id="59" lineNum="24" parent="globals/MapDelegate" pc="268557212" symbol="onBack"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\MapDelegate.mc" id="59" lineNum="26" parent="globals/MapDelegate" pc="268557235" symbol="onBack"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\MapDelegate.mc" id="60" lineNum="11" parent="globals/MapDelegate" pc="268557238" symbol="initialize"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\MapDelegate.mc" id="60" lineNum="12" parent="globals/MapDelegate" pc="268557240" symbol="initialize"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\MapDelegate.mc" id="60" lineNum="13" parent="globals/MapDelegate" pc="268557258" symbol="initialize"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\MapDelegate.mc" id="61" lineNum="31" parent="globals/MapDelegate" pc="268557269" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\MapDelegate.mc" id="61" lineNum="33" parent="globals/MapDelegate" pc="268557271" symbol="onSelect"/>
+        <entry filename="C:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\source\\MapDelegate.mc" id="61" lineNum="34" parent="globals/MapDelegate" pc="268557294" symbol="onSelect"/>
+        <entry filename="c:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\bin\\gen\\006-B3906-00\\source\\Rez.mcgen" id="62" lineNum="22" parent="globals/Rez/Layouts" pc="268557297" symbol="MainLayout"/>
+        <entry filename="c:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\bin\\gen\\006-B3906-00\\source\\Rez.mcgen" id="62" lineNum="23" parent="globals/Rez/Layouts" pc="268557309" symbol="MainLayout"/>
+        <entry filename="c:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\bin\\gen\\006-B3906-00\\source\\Rez.mcgen" id="62" lineNum="25" parent="globals/Rez/Layouts" pc="268557440" symbol="MainLayout"/>
+        <entry filename="c:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\bin\\gen\\006-B3906-00\\source\\Rez.mcgen" id="62" lineNum="27" parent="globals/Rez/Layouts" pc="268557594" symbol="MainLayout"/>
+        <entry filename="c:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\bin\\gen\\006-B3906-00\\source\\Rez.mcgen" id="63" lineNum="32" parent="globals/Rez/Menus/MainMenu" pc="268557621" symbol="&lt;init&gt;"/>
+        <entry filename="c:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\bin\\gen\\006-B3906-00\\source\\Rez.mcgen" id="64" lineNum="33" parent="globals/Rez/Menus/MainMenu" pc="268557640" symbol="initialize"/>
+        <entry filename="c:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\bin\\gen\\006-B3906-00\\source\\Rez.mcgen" id="64" lineNum="34" parent="globals/Rez/Menus/MainMenu" pc="268557642" symbol="initialize"/>
+        <entry filename="c:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\bin\\gen\\006-B3906-00\\source\\Rez.mcgen" id="64" lineNum="35" parent="globals/Rez/Menus/MainMenu" pc="268557660" symbol="initialize"/>
+        <entry filename="c:\\Users\\scott\\Documents\\Garmin Apps\\AlpineAssist\\bin\\gen\\006-B3906-00\\source\\Rez.mcgen" id="64" lineNum="36" parent="globals/Rez/Menus/MainMenu" pc="268557716" symbol="initialize"/>
+    </pcToLineNum>
+    <symbolTable>
+        <entry id="8388639" module="true" symbol="Graphics"/>
+        <entry id="8389346" symbol="text"/>
+        <entry id="23" object="true" symbol="resortsDelegate"/>
+        <entry field="true" id="19" symbol="contentOfResorts"/>
+        <entry field="true" id="21" symbol="mapType"/>
+        <entry id="26" method="true" symbol="setPosition"/>
+        <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
+        <entry id="7" module="true" symbol="globals/Rez/Menus"/>
+        <entry id="14" object="true" symbol="MainDelegate"/>
+        <entry id="39" method="true" symbol="MainLayout"/>
+        <entry field="true" id="8389310" symbol="position"/>
+        <entry id="25" method="true" symbol="onPosition"/>
+        <entry id="2" module="true" symbol="globals/Haglebu/&lt;statics&gt;"/>
+        <entry field="true" id="8388611" module="true" symbol="Toybox"/>
+        <entry field="true" id="48" symbol="HA_S3"/>
+        <entry field="true" id="47" symbol="HA_S2"/>
+        <entry field="true" id="46" symbol="HA_S1"/>
+        <entry id="11" object="true" symbol="App"/>
+        <entry field="true" id="45" symbol="HA_L2"/>
+        <entry field="true" id="44" symbol="HA_L1"/>
+        <entry field="true" id="41" symbol="AppName"/>
+        <entry field="true" id="31" symbol="content"/>
+        <entry id="8" module="true" symbol="globals/Rez/Strings"/>
+        <entry id="8389080" method="true" symbol="onMenu"/>
+        <entry id="8388648" module="true" symbol="WatchUi"/>
+        <entry id="8389081" method="true" symbol="onBack"/>
+        <entry id="3" module="true" symbol="globals/Rez"/>
+        <entry field="true" id="43" symbol="prompt"/>
+        <entry id="15" object="true" symbol="MainView"/>
+        <entry id="8389124" method="true" symbol="onUpdate"/>
+        <entry field="true" id="8389065" symbol="locY"/>
+        <entry field="true" id="8389064" symbol="locX"/>
+        <entry id="8390568" object="true" symbol="MapView"/>
+        <entry id="8388764" method="true" symbol="format"/>
+        <entry id="8388771" module="true" object="true" symbol="Drawables"/>
+        <entry id="8389314" symbol="latitude"/>
+        <entry id="8389348" symbol="font"/>
+        <entry id="28" module="true" symbol="Menus"/>
+        <entry id="8389275" method="true" symbol="getApp"/>
+        <entry id="6" module="true" symbol="globals/Rez/Layouts"/>
+        <entry id="24" method="true" symbol="getPosition"/>
+        <entry id="8389122" method="true" symbol="onLayout"/>
+        <entry id="8389349" symbol="justification"/>
+        <entry id="10" module="true" symbol="globals/Trysil/&lt;statics&gt;"/>
+        <entry id="20" object="true" symbol="decisonDelegate"/>
+        <entry id="5" module="true" symbol="globals/Rez/JsonData"/>
+        <entry id="17" object="true" symbol="Southampton"/>
+        <entry id="4" module="true" symbol="globals/Rez/Drawables"/>
+        <entry id="40" object="true" symbol="MainMenu"/>
+        <entry id="18" object="true" symbol="Trysil"/>
+        <entry field="true" id="38" symbol="MapPin"/>
+        <entry field="true" id="30" symbol="slopes"/>
+        <entry id="8388644" module="true" symbol="System"/>
+        <entry id="8389315" symbol="longitude"/>
+        <entry field="true" id="22" symbol="resortNames"/>
+        <entry id="8389619" method="true" symbol="onSelect"/>
+        <entry id="8388769" module="true" object="true" symbol="Rez"/>
+        <entry field="true" id="8389256" method="true" symbol="open"/>
+        <entry id="8388640" module="true" symbol="Lang"/>
+        <entry id="8390088" module="true" object="true" symbol="JsonData"/>
+        <entry id="12" object="true" symbol="FeatureDelegate"/>
+        <entry field="true" id="37" symbol="LauncherIcon"/>
+        <entry id="8388610" symbol="statics"/>
+        <entry id="8389123" method="true" symbol="onShow"/>
+        <entry id="8389350" module="true" symbol="globals"/>
+        <entry id="35" method="true" symbol="getMapType"/>
+        <entry id="8388770" module="true" object="true" symbol="Strings"/>
+        <entry id="8389953" module="true" symbol="PersistedContent"/>
+        <entry id="8388702" method="true" symbol="initialize"/>
+        <entry id="8389279" method="true" symbol="onStart"/>
+        <entry id="13" object="true" symbol="Haglebu"/>
+        <entry field="true" id="29" symbol="lifts"/>
+        <entry id="9" module="true" symbol="globals/Southampton/&lt;statics&gt;"/>
+        <entry id="8389280" method="true" symbol="getInitialView"/>
+        <entry id="8389281" method="true" symbol="onStop"/>
+        <entry id="8389347" symbol="color"/>
+        <entry id="16" object="true" symbol="MapDelegate"/>
+        <entry id="27" module="true" symbol="Layouts"/>
+        <entry id="8389317" symbol="degrees"/>
+        <entry id="32" method="true" symbol="getContentOfResort"/>
+        <entry id="8388642" module="true" symbol="Position"/>
+        <entry field="true" id="36" symbol="&lt;globals/MapDelegate/&lt;&gt;_view&gt;"/>
+        <entry field="true" id="42" symbol="lead"/>
+        <entry id="8389125" method="true" symbol="onHide"/>
+        <entry id="33" method="true" symbol="getResortNames"/>
+        <entry id="8388635" module="true" symbol="Application"/>
+        <entry field="true" id="8389642" symbol="title"/>
+        <entry field="true" id="34" symbol="iterator"/>
+    </symbolTable>
+    <localVars>
+        <entry arg="true" endPc="268550074" name="info" stackId="1" startPc="268549975"/>
+        <entry arg="true" endPc="268551920" name="item" stackId="1" startPc="268550096"/>
+        <entry endPc="268551919" name="id" stackId="2" startPc="268550100"/>
+        <entry endPc="268551919" name="mainMenu" stackId="3" startPc="268550100"/>
+        <entry endPc="268550286" name="i" stackId="4" startPc="268550174"/>
+        <entry endPc="268550830" name="featureMenu" stackId="5" startPc="268550306"/>
+        <entry endPc="268550830" name="liftKeys" stackId="6" startPc="268550306"/>
+        <entry endPc="268550830" name="slopeKeys" stackId="7" startPc="268550306"/>
+        <entry endPc="268550618" name="i" stackId="8" startPc="268550538"/>
+        <entry endPc="268550739" name="i" stackId="9" startPc="268550659"/>
+        <entry endPc="268551365" name="featureMenu" stackId="10" startPc="268550853"/>
+        <entry endPc="268551365" name="liftKeys" stackId="11" startPc="268550853"/>
+        <entry endPc="268551365" name="slopeKeys" stackId="12" startPc="268550853"/>
+        <entry endPc="268551132" name="i" stackId="13" startPc="268551052"/>
+        <entry endPc="268551253" name="i" stackId="14" startPc="268551173"/>
+        <entry endPc="268551900" name="featureMenu" stackId="15" startPc="268551388"/>
+        <entry endPc="268551900" name="liftKeys" stackId="16" startPc="268551388"/>
+        <entry endPc="268551900" name="slopeKeys" stackId="17" startPc="268551388"/>
+        <entry endPc="268551667" name="i" stackId="18" startPc="268551587"/>
+        <entry endPc="268551788" name="i" stackId="19" startPc="268551708"/>
+        <entry arg="true" endPc="268551964" name="dc" stackId="1" startPc="268551921"/>
+        <entry arg="true" endPc="268552008" name="dc" stackId="1" startPc="268551986"/>
+        <entry arg="true" endPc="268552043" name="info" stackId="1" startPc="268552009"/>
+        <entry endPc="268552549" name="resortsMenu" stackId="1" startPc="268552048"/>
+        <entry endPc="268552549" name="index" stackId="2" startPc="268552048"/>
+        <entry arg="true" endPc="268556939" name="item" stackId="1" startPc="268552649"/>
+        <entry endPc="268556938" name="id" stackId="2" startPc="268552653"/>
+        <entry endPc="268554007" name="haglebuMapView" stackId="3" startPc="268552685"/>
+        <entry endPc="268554007" name="mapMarkers" stackId="4" startPc="268552685"/>
+        <entry endPc="268554007" name="marker" stackId="5" startPc="268552685"/>
+        <entry endPc="268554007" name="top_left" stackId="6" startPc="268552685"/>
+        <entry endPc="268554007" name="bottom_right" stackId="7" startPc="268552685"/>
+        <entry endPc="268554229" name="menu" stackId="8" startPc="268554030"/>
+        <entry endPc="268555574" name="trysilMapView" stackId="9" startPc="268554252"/>
+        <entry endPc="268555574" name="mapMarkers" stackId="10" startPc="268554252"/>
+        <entry endPc="268555574" name="marker" stackId="11" startPc="268554252"/>
+        <entry endPc="268555574" name="top_left" stackId="12" startPc="268554252"/>
+        <entry endPc="268555574" name="bottom_right" stackId="13" startPc="268554252"/>
+        <entry endPc="268556919" name="sotonMapView" stackId="14" startPc="268555597"/>
+        <entry endPc="268556919" name="mapMarkers" stackId="15" startPc="268555597"/>
+        <entry endPc="268556919" name="marker" stackId="16" startPc="268555597"/>
+        <entry endPc="268556919" name="top_left" stackId="17" startPc="268555597"/>
+        <entry endPc="268556919" name="bottom_right" stackId="18" startPc="268555597"/>
+        <entry arg="true" endPc="268557025" name="dc" stackId="1" startPc="268556981"/>
+        <entry arg="true" endPc="268557159" name="item" stackId="1" startPc="268557071"/>
+        <entry endPc="268557158" name="id" stackId="2" startPc="268557075"/>
+        <entry arg="true" endPc="268557268" name="view" stackId="1" startPc="268557238"/>
+        <entry arg="true" endPc="268557620" name="dc" stackId="1" startPc="268557297"/>
+        <entry endPc="268557620" name="rez_cmp_local_text_1370360891" stackId="2" startPc="268557309"/>
+        <entry endPc="268557620" name="rez_cmp_local_text_8195068156" stackId="3" startPc="268557309"/>
+    </localVars>
+    <annotations>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="lead"/>
+        <annotationEntry annotation="initialized" class="JsonData" module="globals/Rez" symbol="HA_S1"/>
+        <annotationEntry annotation="initialized" class="JsonData" module="globals/Rez" symbol="HA_S2"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="prompt"/>
+        <annotationEntry annotation="initialized" class="JsonData" module="globals/Rez" symbol="HA_S3"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="open"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="MapPin"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
+        <annotationEntry annotation="initialized" class="JsonData" module="globals/Rez" symbol="HA_L1"/>
+        <annotationEntry annotation="initialized" class="JsonData" module="globals/Rez" symbol="HA_L2"/>
+    </annotations>
+    <dataEntryOffsetMappings>
+        <dataEntry label="globals" offset="103" parentId="" symbolId="globals" type="module"/>
+        <dataEntry label="globals/App" offset="1212" parentId="globals" symbolId="App" type="class"/>
+        <dataEntry label="globals/resortsDelegate" offset="1283" parentId="globals" symbolId="resortsDelegate" type="class"/>
+        <dataEntry label="globals/MainView" offset="1370" parentId="globals" symbolId="MainView" type="class"/>
+        <dataEntry label="globals/Rez" offset="1465" parentId="globals" symbolId="Rez" type="module"/>
+        <dataEntry label="globals/Trysil" offset="1536" parentId="globals" symbolId="Trysil" type="class"/>
+        <dataEntry label="globals/Trysil/&lt;statics&gt;" offset="1583" parentId="Trysil" symbolId="&lt;statics&gt;" type="module"/>
+        <dataEntry label="globals/MainDelegate" offset="1630" parentId="globals" symbolId="MainDelegate" type="class"/>
+        <dataEntry label="globals/Southampton" offset="1717" parentId="globals" symbolId="Southampton" type="class"/>
+        <dataEntry label="globals/Southampton/&lt;statics&gt;" offset="1764" parentId="Southampton" symbolId="&lt;statics&gt;" type="module"/>
+        <dataEntry label="globals/FeatureDelegate" offset="1811" parentId="globals" symbolId="FeatureDelegate" type="class"/>
+        <dataEntry label="globals/MapView" offset="1882" parentId="globals" symbolId="MapView" type="class"/>
+        <dataEntry label="globals/decisonDelegate" offset="1953" parentId="globals" symbolId="decisonDelegate" type="class"/>
+        <dataEntry label="globals/Haglebu" offset="2032" parentId="globals" symbolId="Haglebu" type="class"/>
+        <dataEntry label="globals/Haglebu/&lt;statics&gt;" offset="2079" parentId="Haglebu" symbolId="&lt;statics&gt;" type="module"/>
+        <dataEntry label="globals/MapDelegate" offset="2126" parentId="globals" symbolId="MapDelegate" type="class"/>
+        <dataEntry label="globals/Rez/Drawables" offset="2197" parentId="Rez" symbolId="Drawables" type="module"/>
+        <dataEntry label="globals/Rez/Layouts" offset="2244" parentId="Rez" symbolId="Layouts" type="module"/>
+        <dataEntry label="globals/Rez/Menus" offset="2283" parentId="Rez" symbolId="Menus" type="module"/>
+        <dataEntry label="globals/Rez/Strings" offset="2322" parentId="Rez" symbolId="Strings" type="module"/>
+        <dataEntry label="globals/Rez/JsonData" offset="2385" parentId="Rez" symbolId="JsonData" type="module"/>
+        <dataEntry label="globals/Rez/Menus/MainMenu" offset="2456" parentId="Menus" symbolId="MainMenu" type="class"/>
+    </dataEntryOffsetMappings>
+    <functions>
+        <functionEntry accessMode="public" endPc="268435507" name="&lt;init&gt;" parent="App" startPc="268435489">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435526" name="&lt;init&gt;" parent="resortsDelegate" startPc="268435508">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435552" name="getApp" startPc="268435527">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435571" name="&lt;init&gt;" parent="MainView" startPc="268435553">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435595" name="&lt;init&gt;" parent="Rez" startPc="268435572">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Trysil">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268544859" name="&lt;init&gt;" parent="globals/Trysil" startPc="268435596">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268544926" name="&lt;init&gt;" parent="MainDelegate" startPc="268544860">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Southampton">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268547304" name="&lt;init&gt;" parent="globals/Southampton" startPc="268544927">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268547323" name="&lt;init&gt;" parent="FeatureDelegate" startPc="268547305">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268547342" name="&lt;init&gt;" parent="MapView" startPc="268547324">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268547409" name="&lt;init&gt;" parent="decisonDelegate" startPc="268547343">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Haglebu">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268549787" name="&lt;init&gt;" parent="globals/Haglebu" startPc="268547410">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268549806" name="&lt;init&gt;" parent="MapDelegate" startPc="268549788">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268549809" name="onStart" parent="App" startPc="268549807">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268549886" name="getInitialView" parent="App" startPc="268549810">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268549907" name="initialize" parent="App" startPc="268549887">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268549910" name="onStop" parent="App" startPc="268549908">
+            <param id="state"/>
+            <documentation><![CDATA[<div class="description"> onStop() is called when your application is exiting<br/></div>]]></documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268549934" name="onBack" parent="resortsDelegate" startPc="268549911">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268549974" name="getPosition" parent="resortsDelegate" startPc="268549935">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268550074" name="onPosition" parent="resortsDelegate" startPc="268549975">
+            <param id="info"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268550095" name="initialize" parent="resortsDelegate" startPc="268550075">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268551920" name="onSelect" parent="resortsDelegate" startPc="268550096">
+            <param id="item"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onShow" parent="MainView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268551964" name="onLayout" parent="MainView" startPc="268551921">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268551985" name="initialize" parent="MainView" startPc="268551965">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onHide" parent="MainView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268552008" name="onUpdate" parent="MainView" startPc="268551986">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268552043" name="setPosition" parent="MainView" startPc="268552009">
+            <param id="info"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Drawables">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Layouts">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Menus">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Strings">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="JsonData">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="initialize" parent="Trysil">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268552549" name="onMenu" parent="MainDelegate" startPc="268552044">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268552560" name="getContentOfResort" parent="MainDelegate" startPc="268552550">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268552571" name="getResortNames" parent="MainDelegate" startPc="268552561">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268552592" name="initialize" parent="MainDelegate" startPc="268552572">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="initialize" parent="Southampton">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268552616" name="onBack" parent="FeatureDelegate" startPc="268552593">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268552637" name="initialize" parent="FeatureDelegate" startPc="268552617">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268552648" name="getMapType" parent="FeatureDelegate" startPc="268552638">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268556939" name="onSelect" parent="FeatureDelegate" startPc="268552649">
+            <param id="item"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onShow" parent="MapView">
+            <documentation><![CDATA[<div class="description"> Called when this View is brought to the foreground. Restore<br/> the state of this View and prepare it to be shown. This includes<br/> loading resources into memory.<br/></div>]]></documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268556942" name="onLayout" parent="MapView" startPc="268556940">
+            <param id="dc"/>
+            <documentation><![CDATA[<div class="description"> Load your resources here<br/> <div class="param"> dc Device context</div><br/></div>]]></documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268556980" name="initialize" parent="MapView" startPc="268556943">
+            <documentation><![CDATA[<div class="description"> Constructor<br/></div>]]></documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268557025" name="onUpdate" parent="MapView" startPc="268556981">
+            <param id="dc"/>
+            <documentation><![CDATA[<div class="description"> Update the view<br/> <div class="param"> dc Device context</div><br/></div>]]></documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268557049" name="onBack" parent="decisonDelegate" startPc="268557026">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268557070" name="initialize" parent="decisonDelegate" startPc="268557050">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268557159" name="onSelect" parent="decisonDelegate" startPc="268557071">
+            <param id="item"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="initialize" parent="Haglebu">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268557237" name="onBack" parent="MapDelegate" startPc="268557160">
+            <documentation><![CDATA[<div class="description"> Handle the back event<br/> <div class="returns">Returns  true if handled, false otherwise</div><br/></div>]]></documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268557268" name="initialize" parent="MapDelegate" startPc="268557238">
+            <param id="view"/>
+            <documentation><![CDATA[<div class="description"> Constructor<br/> <div class="param"> view The associated map view</div><br/></div>]]></documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268557296" name="onSelect" parent="MapDelegate" startPc="268557269">
+            <documentation><![CDATA[<div class="description"> Handle the select button<br/> <div class="returns">Returns  true if handled, false otherwise</div><br/></div>]]></documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268557620" name="MainLayout" parent="Layouts" startPc="268557297">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268557639" name="&lt;init&gt;" parent="MainMenu" startPc="268557621">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268557772" name="initialize" parent="MainMenu" startPc="268557640">
+            <documentation/>
+        </functionEntry>
+    </functions>
+</debugInfo>

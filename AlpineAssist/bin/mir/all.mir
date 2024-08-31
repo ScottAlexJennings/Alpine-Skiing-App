@@ -1,0 +1,210 @@
+[ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\all.mc"; @line = 1; ]
+import Toybox.Application;
+[ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\all.mc"; @line = 2; ]
+import Toybox.Lang;
+[ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\all.mc"; @line = 3; ]
+import Toybox.WatchUi;
+[ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\all.mc"; @line = 4; ]
+import Toybox.System;
+[ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\all.mc"; @line = 5; ]
+import Toybox.Graphics;
+[ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\all.mc"; @line = 8; ]
+class AlpineAssistApp extends Application.AppBase{
+    [ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\all.mc"; @line = 8; ]
+    <init> {
+    }
+    [ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\all.mc"; @line = 8; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\all.mc"; @line = 10; ]
+    function initialize() as Void {
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_all_mc_10_26_12_4_start:
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\all.mc" 11 8 ]
+        %tmp.2 = getv ? :AppBase;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_all_mc_10_26_12_4_stop:
+    }
+    [ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\all.mc"; @line = 15; ]
+    function onStart(state as Dictionary or Null) as Void {
+    }
+    [ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\all.mc"; @line = 19; ]
+    function onStop(state as Dictionary or Null) as Void {
+    }
+    [ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\all.mc"; @line = 23; ]
+    function getInitialView() as [Views] or [Views, InputDelegates] {
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_all_mc_23_68_25_4_start:
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\all.mc" 24 8 ]
+        %tmp.1 = newa 2;
+        %tmp.5 = getv ? :AlpineAssistView;
+        %tmp.2 = newc %tmp.5 ();
+        %tmp.6 = dup %tmp.1;
+        %tmp.7 = aputv %tmp.6 0 %tmp.2;
+        %tmp.11 = getv ? :AlpineAssistDelegate;
+        %tmp.8 = newc %tmp.11 ();
+        %tmp.12 = dup %tmp.7;
+        %tmp.13 = aputv %tmp.12 1 %tmp.8;
+        ret %tmp.13;
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_all_mc_23_68_25_4_stop:
+    }
+}
+[ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\all.mc"; @line = 29; ]
+function getApp() as AlpineAssistApp {
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_all_mc_29_37_31_0_start:
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\all.mc" 30 4 ]
+    %tmp.1 = getm $.Toybox.Application;
+    %tmp.2 = getv function %tmp.1 :getApp;
+    %tmp.3 = invoke %tmp.1 %tmp.2();
+    %tmp.4 = as %tmp.3 AlpineAssistApp;
+    ret %tmp.4;
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_all_mc_29_37_31_0_stop:
+}
+[ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\all.mc"; @line = 35; ]
+class AlpineAssistDelegate extends WatchUi.BehaviorDelegate{
+    [ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\all.mc"; @line = 35; ]
+    <init> {
+    }
+    [ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\all.mc"; @line = 35; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\all.mc"; @line = 37; ]
+    function initialize() as Void {
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_all_mc_37_26_39_4_start:
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\all.mc" 38 8 ]
+        %tmp.2 = getv ? :BehaviorDelegate;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_all_mc_37_26_39_4_stop:
+    }
+    [ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\all.mc"; @line = 41; ]
+    function onMenu() as Boolean {
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_all_mc_41_33_44_4_start:
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\all.mc" 42 8 ]
+        %tmp.1 = getm $.Toybox.WatchUi;
+        %tmp.2 = getv function %tmp.1 :pushView;
+        %tmp.6 = getv ? :Rez;
+        %tmp.7 = getv %tmp.6 :Menus;
+        %tmp.8 = getv function ? %tmp.7 :MainMenu;
+        %tmp.3 = newc %tmp.8 ();
+        %tmp.12 = getv ? :AlpineAssistMenuDelegate;
+        %tmp.9 = newc %tmp.12 ();
+        %tmp.13 = getm $.Toybox.WatchUi;
+        %tmp.14 = getv %tmp.13 :SLIDE_UP;
+        invoke %tmp.1 %tmp.2(%tmp.3, %tmp.9, %tmp.14);
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\all.mc" 43 8 ]
+        %tmp.15 = true;
+        ret %tmp.15;
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_all_mc_41_33_44_4_stop:
+    }
+}
+[ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\all.mc"; @line = 49; ]
+class AlpineAssistMenuDelegate extends WatchUi.MenuInputDelegate{
+    [ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\all.mc"; @line = 49; ]
+    <init> {
+    }
+    [ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\all.mc"; @line = 49; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\all.mc"; @line = 51; ]
+    function initialize() as Void {
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_all_mc_51_26_53_4_start:
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\all.mc" 52 8 ]
+        %tmp.2 = getv ? :MenuInputDelegate;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_all_mc_51_26_53_4_stop:
+    }
+    [ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\all.mc"; @line = 55; ]
+    function onMenuItem(item as Symbol) as Void {
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_all_mc_55_48_61_4_start:
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\all.mc" 56 8 ]
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_all_mc_56_8_60_8_if_stmt:
+        %tmp.2 = lgetv %item;
+        %tmp.4 = const :item_1;
+        %tmp.5 = eq %tmp.2 %tmp.4;
+        bf %tmp.5 @C_Users_scott_Documents_Garmin_Apps_AlpineAssist_all_mc_56_8_60_8_if_false;
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_all_mc_56_8_60_8_if_true:
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_all_mc_56_29_58_8_start:
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\all.mc" 57 12 ]
+        %tmp.6 = getm $.Toybox.System;
+        %tmp.7 = getv function %tmp.6 :println;
+        %tmp.8 = "item 1";
+        invoke %tmp.6 %tmp.7(%tmp.8);
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_all_mc_56_29_58_8_stop:
+        goto @C_Users_scott_Documents_Garmin_Apps_AlpineAssist_all_mc_56_8_60_8_if_end;
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_all_mc_56_8_60_8_if_false:
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\all.mc" 58 15 ]
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_all_mc_58_15_60_8_if_stmt:
+        %tmp.10 = lgetv %item;
+        %tmp.12 = const :item_2;
+        %tmp.13 = eq %tmp.10 %tmp.12;
+        bf %tmp.13 @C_Users_scott_Documents_Garmin_Apps_AlpineAssist_all_mc_58_15_60_8_if_end;
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_all_mc_58_15_60_8_if_true:
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_all_mc_58_36_60_8_start:
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\all.mc" 59 12 ]
+        %tmp.14 = getm $.Toybox.System;
+        %tmp.15 = getv function %tmp.14 :println;
+        %tmp.16 = "item 2";
+        invoke %tmp.14 %tmp.15(%tmp.16);
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_all_mc_58_36_60_8_stop:
+        goto @C_Users_scott_Documents_Garmin_Apps_AlpineAssist_all_mc_58_15_60_8_if_end;
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_all_mc_58_15_60_8_if_end:
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_all_mc_56_8_60_8_if_end:
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_all_mc_55_48_61_4_stop:
+    }
+}
+[ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\all.mc"; @line = 66; ]
+class AlpineAssistView extends WatchUi.View{
+    [ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\all.mc"; @line = 66; ]
+    <init> {
+    }
+    [ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\all.mc"; @line = 66; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\all.mc"; @line = 68; ]
+    function initialize() as Void {
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_all_mc_68_26_70_4_start:
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\all.mc" 69 8 ]
+        %tmp.2 = getv ? :View;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_all_mc_68_26_70_4_stop:
+    }
+    [ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\all.mc"; @line = 73; ]
+    function onLayout(dc as Dc) as Void {
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_all_mc_73_40_75_4_start:
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\all.mc" 74 8 ]
+        %tmp.1 = self;
+        %tmp.2 = getv function %tmp.1 :setLayout;
+        %tmp.4 = getv ? :Rez;
+        %tmp.5 = getv %tmp.4 :Layouts;
+        %tmp.6 = getv function %tmp.5 :MainLayout;
+        %tmp.8 = lgetv %dc;
+        %tmp.9 = invoke %tmp.5 %tmp.6(%tmp.8);
+        invoke %tmp.1 %tmp.2(%tmp.9);
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_all_mc_73_40_75_4_stop:
+    }
+    [ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\all.mc"; @line = 80; ]
+    function onShow() as Void {
+    }
+    [ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\all.mc"; @line = 84; ]
+    function onUpdate(dc as Dc) as Void {
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_all_mc_84_40_87_4_start:
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\all.mc" 86 8 ]
+        %tmp.2 = getv ? :View;
+        %tmp.3 = getv function %tmp.2 :onUpdate;
+        %tmp.5 = lgetv %dc;
+        invoke %tmp.2 %tmp.3(%tmp.5);
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_all_mc_84_40_87_4_stop:
+    }
+    [ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\all.mc"; @line = 92; ]
+    function onHide() as Void {
+    }
+}
+[ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\all.mc"; @line = 1; ]
+<init> {
+}

@@ -1,0 +1,1137 @@
+[ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc"; @line = 1; ]
+import Toybox.Lang;
+[ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc"; @line = 2; ]
+import Toybox.System;
+[ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc"; @line = 3; ]
+import Toybox.WatchUi;
+[ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc"; @line = 4; ]
+import Toybox.PersistedContent;
+[ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc"; @line = 6; @position = 11; ]
+var mapType = 0;
+[ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc"; @line = 8; ]
+class FeatureDelegate extends WatchUi.Menu2InputDelegate{
+    [ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc"; @line = 8; ]
+    <init> {
+    }
+    [ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc"; @line = 8; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc"; @line = 12; ]
+    public
+    function initialize() as Void {
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_FeatureDelegate_mc_12_33_14_4_start:
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 13 8 ]
+        %tmp.2 = getv ? :Menu2InputDelegate;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_FeatureDelegate_mc_12_33_14_4_stop:
+    }
+    [ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc"; @line = 16; ]
+    public
+    function onSelect(item as MenuItem) as Void {
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_FeatureDelegate_mc_16_55_181_4_start:
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 17 8 ]
+        [ "C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_FeatureDelegate_mc_16_55_181_4_start" "C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_FeatureDelegate_mc_16_55_181_4_stop" ]
+        %id.1 = local;
+        %tmp.1 = lgetv %item;
+        %tmp.2 = getv function %tmp.1 :getId;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        %tmp.4 = as %tmp.3 String;
+        lputv %id.1 %tmp.4;
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 19 8 ]
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_FeatureDelegate_mc_19_8_179_8_if_stmt:
+        %tmp.5 = lgetv %id.1;
+        %tmp.6 = getv function %tmp.5 :equals;
+        %tmp.7 = "haglebuMap";
+        %tmp.8 = invoke %tmp.5 %tmp.6(%tmp.7);
+        bf %tmp.8 @C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_FeatureDelegate_mc_19_8_179_8_if_false;
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_FeatureDelegate_mc_19_8_179_8_if_true:
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_FeatureDelegate_mc_19_37_69_8_start:
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 20 12 ]
+        %tmp.9 = getm $.Toybox.System;
+        %tmp.10 = getv function %tmp.9 :println;
+        %tmp.11 = "haglebuMap";
+        invoke %tmp.9 %tmp.10(%tmp.11);
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 21 12 ]
+        [ "C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_FeatureDelegate_mc_19_37_69_8_start" "C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_FeatureDelegate_mc_19_37_69_8_stop" ]
+        %haglebuMapView.2 = local;
+        %tmp.15 = getm $;
+        %tmp.16 = getv %tmp.15 :MapView;
+        %tmp.12 = newc %tmp.16 ();
+        lputv %haglebuMapView.2 %tmp.12;
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 24 12 ]
+        [ "C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_FeatureDelegate_mc_19_37_69_8_start" "C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_FeatureDelegate_mc_19_37_69_8_stop" ]
+        %mapMarkers.3 = local;
+        %tmp.17 = newa 0;
+        lputv %mapMarkers.3 %tmp.17;
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 27 12 ]
+        [ "C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_FeatureDelegate_mc_19_37_69_8_start" "C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_FeatureDelegate_mc_19_37_69_8_stop" ]
+        %marker.4 = local;
+        %tmp.20 = getm $.Toybox.WatchUi;
+        %tmp.21 = getv function ? %tmp.20 :MapMarker;
+        %tmp.25 = getv ? :Position;
+        %tmp.26 = getv function ? %tmp.25 :Location;
+        %tmp.27 = newd 3;
+        %tmp.29 = const :latitude;
+        %tmp.30 = 60.3407457;
+        %tmp.31 = dup %tmp.27;
+        %tmp.32 = aputv %tmp.31 %tmp.29 %tmp.30;
+        %tmp.34 = const :longitude;
+        %tmp.35 = 9.2082146;
+        %tmp.36 = dup %tmp.32;
+        %tmp.37 = aputv %tmp.36 %tmp.34 %tmp.35;
+        %tmp.39 = const :format;
+        %tmp.41 = const :degrees;
+        %tmp.42 = dup %tmp.37;
+        %tmp.43 = aputv %tmp.42 %tmp.39 %tmp.41;
+        %tmp.22 = newc %tmp.26 (%tmp.43);
+        %tmp.18 = newc %tmp.21 (%tmp.22);
+        lputv %marker.4 %tmp.18;
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 28 12 ]
+        %tmp.44 = lgetv %marker.4;
+        %tmp.45 = getv function %tmp.44 :setIcon;
+        %tmp.46 = getm $.Toybox.WatchUi;
+        %tmp.47 = getv function %tmp.46 :loadResource;
+        %tmp.48 = getm $;
+        %tmp.49 = getv %tmp.48 :Rez;
+        %tmp.50 = getv %tmp.49 :Drawables;
+        %tmp.51 = getv %tmp.50 :MapPin;
+        %tmp.52 = invoke %tmp.46 %tmp.47(%tmp.51);
+        %tmp.53 = as %tmp.52 BitmapResource;
+        %tmp.54 = 12;
+        %tmp.55 = 24;
+        invoke %tmp.44 %tmp.45(%tmp.53, %tmp.54, %tmp.55);
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 29 12 ]
+        %tmp.56 = lgetv %marker.4;
+        %tmp.57 = getv function %tmp.56 :setLabel;
+        %tmp.58 = "southLift";
+        invoke %tmp.56 %tmp.57(%tmp.58);
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 30 12 ]
+        %tmp.59 = lgetv %mapMarkers.3;
+        %tmp.60 = getv function %tmp.59 :add;
+        %tmp.62 = lgetv %marker.4;
+        invoke %tmp.59 %tmp.60(%tmp.62);
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 33 12 ]
+        %tmp.65 = getm $.Toybox.WatchUi;
+        %tmp.66 = getv function ? %tmp.65 :MapMarker;
+        %tmp.70 = getv ? :Position;
+        %tmp.71 = getv function ? %tmp.70 :Location;
+        %tmp.72 = newd 3;
+        %tmp.74 = const :latitude;
+        %tmp.75 = 60.345122300000014;
+        %tmp.76 = dup %tmp.72;
+        %tmp.77 = aputv %tmp.76 %tmp.74 %tmp.75;
+        %tmp.79 = const :longitude;
+        %tmp.80 = 9.1919601;
+        %tmp.81 = dup %tmp.77;
+        %tmp.82 = aputv %tmp.81 %tmp.79 %tmp.80;
+        %tmp.84 = const :format;
+        %tmp.86 = const :degrees;
+        %tmp.87 = dup %tmp.82;
+        %tmp.88 = aputv %tmp.87 %tmp.84 %tmp.86;
+        %tmp.67 = newc %tmp.71 (%tmp.88);
+        %tmp.63 = newc %tmp.66 (%tmp.67);
+        lputv %marker.4 %tmp.63;
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 34 12 ]
+        %tmp.89 = lgetv %marker.4;
+        %tmp.90 = getv function %tmp.89 :setIcon;
+        %tmp.91 = getm $.Toybox.WatchUi;
+        %tmp.92 = getv function %tmp.91 :loadResource;
+        %tmp.93 = getm $;
+        %tmp.94 = getv %tmp.93 :Rez;
+        %tmp.95 = getv %tmp.94 :Drawables;
+        %tmp.96 = getv %tmp.95 :MapPin;
+        %tmp.97 = invoke %tmp.91 %tmp.92(%tmp.96);
+        %tmp.98 = as %tmp.97 BitmapResource;
+        %tmp.99 = 12;
+        %tmp.100 = 24;
+        invoke %tmp.89 %tmp.90(%tmp.98, %tmp.99, %tmp.100);
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 35 12 ]
+        %tmp.101 = lgetv %marker.4;
+        %tmp.102 = getv function %tmp.101 :setLabel;
+        %tmp.103 = "westLift";
+        invoke %tmp.101 %tmp.102(%tmp.103);
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 36 12 ]
+        %tmp.104 = lgetv %mapMarkers.3;
+        %tmp.105 = getv function %tmp.104 :add;
+        %tmp.107 = lgetv %marker.4;
+        invoke %tmp.104 %tmp.105(%tmp.107);
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 39 12 ]
+        %tmp.110 = getm $.Toybox.WatchUi;
+        %tmp.111 = getv function ? %tmp.110 :MapMarker;
+        %tmp.115 = getv ? :Position;
+        %tmp.116 = getv function ? %tmp.115 :Location;
+        %tmp.117 = newd 3;
+        %tmp.119 = const :latitude;
+        %tmp.120 = 60.346291599999994;
+        %tmp.121 = dup %tmp.117;
+        %tmp.122 = aputv %tmp.121 %tmp.119 %tmp.120;
+        %tmp.124 = const :longitude;
+        %tmp.125 = 9.21105;
+        %tmp.126 = dup %tmp.122;
+        %tmp.127 = aputv %tmp.126 %tmp.124 %tmp.125;
+        %tmp.129 = const :format;
+        %tmp.131 = const :degrees;
+        %tmp.132 = dup %tmp.127;
+        %tmp.133 = aputv %tmp.132 %tmp.129 %tmp.131;
+        %tmp.112 = newc %tmp.116 (%tmp.133);
+        %tmp.108 = newc %tmp.111 (%tmp.112);
+        lputv %marker.4 %tmp.108;
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 40 12 ]
+        %tmp.134 = lgetv %marker.4;
+        %tmp.135 = getv function %tmp.134 :setIcon;
+        %tmp.136 = getm $.Toybox.WatchUi;
+        %tmp.137 = getv function %tmp.136 :loadResource;
+        %tmp.138 = getm $;
+        %tmp.139 = getv %tmp.138 :Rez;
+        %tmp.140 = getv %tmp.139 :Drawables;
+        %tmp.141 = getv %tmp.140 :MapPin;
+        %tmp.142 = invoke %tmp.136 %tmp.137(%tmp.141);
+        %tmp.143 = as %tmp.142 BitmapResource;
+        %tmp.144 = 12;
+        %tmp.145 = 24;
+        invoke %tmp.134 %tmp.135(%tmp.143, %tmp.144, %tmp.145);
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 41 12 ]
+        %tmp.146 = lgetv %marker.4;
+        %tmp.147 = getv function %tmp.146 :setLabel;
+        %tmp.148 = "westSlope1";
+        invoke %tmp.146 %tmp.147(%tmp.148);
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 42 12 ]
+        %tmp.149 = lgetv %mapMarkers.3;
+        %tmp.150 = getv function %tmp.149 :add;
+        %tmp.152 = lgetv %marker.4;
+        invoke %tmp.149 %tmp.150(%tmp.152);
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 45 12 ]
+        %tmp.155 = getm $.Toybox.WatchUi;
+        %tmp.156 = getv function ? %tmp.155 :MapMarker;
+        %tmp.160 = getv ? :Position;
+        %tmp.161 = getv function ? %tmp.160 :Location;
+        %tmp.162 = newd 3;
+        %tmp.164 = const :latitude;
+        %tmp.165 = 60.346291599999994;
+        %tmp.166 = dup %tmp.162;
+        %tmp.167 = aputv %tmp.166 %tmp.164 %tmp.165;
+        %tmp.169 = const :longitude;
+        %tmp.170 = 9.21105;
+        %tmp.171 = dup %tmp.167;
+        %tmp.172 = aputv %tmp.171 %tmp.169 %tmp.170;
+        %tmp.174 = const :format;
+        %tmp.176 = const :degrees;
+        %tmp.177 = dup %tmp.172;
+        %tmp.178 = aputv %tmp.177 %tmp.174 %tmp.176;
+        %tmp.157 = newc %tmp.161 (%tmp.178);
+        %tmp.153 = newc %tmp.156 (%tmp.157);
+        lputv %marker.4 %tmp.153;
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 46 12 ]
+        %tmp.179 = lgetv %marker.4;
+        %tmp.180 = getv function %tmp.179 :setIcon;
+        %tmp.181 = getm $.Toybox.WatchUi;
+        %tmp.182 = getv function %tmp.181 :loadResource;
+        %tmp.183 = getm $;
+        %tmp.184 = getv %tmp.183 :Rez;
+        %tmp.185 = getv %tmp.184 :Drawables;
+        %tmp.186 = getv %tmp.185 :MapPin;
+        %tmp.187 = invoke %tmp.181 %tmp.182(%tmp.186);
+        %tmp.188 = as %tmp.187 BitmapResource;
+        %tmp.189 = 12;
+        %tmp.190 = 24;
+        invoke %tmp.179 %tmp.180(%tmp.188, %tmp.189, %tmp.190);
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 47 12 ]
+        %tmp.191 = lgetv %marker.4;
+        %tmp.192 = getv function %tmp.191 :setLabel;
+        %tmp.193 = "westSlope2";
+        invoke %tmp.191 %tmp.192(%tmp.193);
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 48 12 ]
+        %tmp.194 = lgetv %mapMarkers.3;
+        %tmp.195 = getv function %tmp.194 :add;
+        %tmp.197 = lgetv %marker.4;
+        invoke %tmp.194 %tmp.195(%tmp.197);
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 51 12 ]
+        %tmp.200 = getm $.Toybox.WatchUi;
+        %tmp.201 = getv function ? %tmp.200 :MapMarker;
+        %tmp.205 = getv ? :Position;
+        %tmp.206 = getv function ? %tmp.205 :Location;
+        %tmp.207 = newd 3;
+        %tmp.209 = const :latitude;
+        %tmp.210 = 60.346913;
+        %tmp.211 = dup %tmp.207;
+        %tmp.212 = aputv %tmp.211 %tmp.209 %tmp.210;
+        %tmp.214 = const :longitude;
+        %tmp.215 = 9.2069336;
+        %tmp.216 = dup %tmp.212;
+        %tmp.217 = aputv %tmp.216 %tmp.214 %tmp.215;
+        %tmp.219 = const :format;
+        %tmp.221 = const :degrees;
+        %tmp.222 = dup %tmp.217;
+        %tmp.223 = aputv %tmp.222 %tmp.219 %tmp.221;
+        %tmp.202 = newc %tmp.206 (%tmp.223);
+        %tmp.198 = newc %tmp.201 (%tmp.202);
+        lputv %marker.4 %tmp.198;
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 52 12 ]
+        %tmp.224 = lgetv %marker.4;
+        %tmp.225 = getv function %tmp.224 :setIcon;
+        %tmp.226 = getm $.Toybox.WatchUi;
+        %tmp.227 = getv function %tmp.226 :loadResource;
+        %tmp.228 = getm $;
+        %tmp.229 = getv %tmp.228 :Rez;
+        %tmp.230 = getv %tmp.229 :Drawables;
+        %tmp.231 = getv %tmp.230 :MapPin;
+        %tmp.232 = invoke %tmp.226 %tmp.227(%tmp.231);
+        %tmp.233 = as %tmp.232 BitmapResource;
+        %tmp.234 = 12;
+        %tmp.235 = 24;
+        invoke %tmp.224 %tmp.225(%tmp.233, %tmp.234, %tmp.235);
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 53 12 ]
+        %tmp.236 = lgetv %marker.4;
+        %tmp.237 = getv function %tmp.236 :setLabel;
+        %tmp.238 = "westSlope3";
+        invoke %tmp.236 %tmp.237(%tmp.238);
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 54 12 ]
+        %tmp.239 = lgetv %mapMarkers.3;
+        %tmp.240 = getv function %tmp.239 :add;
+        %tmp.242 = lgetv %marker.4;
+        invoke %tmp.239 %tmp.240(%tmp.242);
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 57 12 ]
+        %tmp.243 = lgetv %haglebuMapView.2;
+        %tmp.244 = getv function %tmp.243 :setMapMarker;
+        %tmp.246 = lgetv %mapMarkers.3;
+        invoke %tmp.243 %tmp.244(%tmp.246);
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 60 12 ]
+        [ "C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_FeatureDelegate_mc_19_37_69_8_start" "C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_FeatureDelegate_mc_19_37_69_8_stop" ]
+        %top_left.5 = local;
+        %tmp.250 = getv ? :Position;
+        %tmp.251 = getv function ? %tmp.250 :Location;
+        %tmp.252 = newd 3;
+        %tmp.254 = const :latitude;
+        %tmp.255 = 60.35;
+        %tmp.256 = dup %tmp.252;
+        %tmp.257 = aputv %tmp.256 %tmp.254 %tmp.255;
+        %tmp.259 = const :longitude;
+        %tmp.260 = 9.188154;
+        %tmp.261 = dup %tmp.257;
+        %tmp.262 = aputv %tmp.261 %tmp.259 %tmp.260;
+        %tmp.264 = const :format;
+        %tmp.266 = const :degrees;
+        %tmp.267 = dup %tmp.262;
+        %tmp.268 = aputv %tmp.267 %tmp.264 %tmp.266;
+        %tmp.247 = newc %tmp.251 (%tmp.268);
+        lputv %top_left.5 %tmp.247;
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 61 12 ]
+        [ "C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_FeatureDelegate_mc_19_37_69_8_start" "C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_FeatureDelegate_mc_19_37_69_8_stop" ]
+        %bottom_right.6 = local;
+        %tmp.272 = getv ? :Position;
+        %tmp.273 = getv function ? %tmp.272 :Location;
+        %tmp.274 = newd 3;
+        %tmp.276 = const :latitude;
+        %tmp.277 = 60.34;
+        %tmp.278 = dup %tmp.274;
+        %tmp.279 = aputv %tmp.278 %tmp.276 %tmp.277;
+        %tmp.281 = const :longitude;
+        %tmp.282 = 9.209592;
+        %tmp.283 = dup %tmp.279;
+        %tmp.284 = aputv %tmp.283 %tmp.281 %tmp.282;
+        %tmp.286 = const :format;
+        %tmp.288 = const :degrees;
+        %tmp.289 = dup %tmp.284;
+        %tmp.290 = aputv %tmp.289 %tmp.286 %tmp.288;
+        %tmp.269 = newc %tmp.273 (%tmp.290);
+        lputv %bottom_right.6 %tmp.269;
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 62 12 ]
+        %tmp.291 = lgetv %haglebuMapView.2;
+        %tmp.292 = getv function %tmp.291 :setMapVisibleArea;
+        %tmp.294 = lgetv %top_left.5;
+        %tmp.296 = lgetv %bottom_right.6;
+        invoke %tmp.291 %tmp.292(%tmp.294, %tmp.296);
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 65 12 ]
+        %tmp.297 = lgetv %haglebuMapView.2;
+        %tmp.298 = getv function %tmp.297 :setScreenVisibleArea;
+        %tmp.299 = 0;
+        %tmp.300 = 0;
+        %tmp.301 = getm $.Toybox.System;
+        %tmp.302 = getv function %tmp.301 :getDeviceSettings;
+        %tmp.303 = invoke %tmp.301 %tmp.302();
+        %tmp.304 = getv %tmp.303 :screenWidth;
+        %tmp.305 = getm $.Toybox.System;
+        %tmp.306 = getv function %tmp.305 :getDeviceSettings;
+        %tmp.307 = invoke %tmp.305 %tmp.306();
+        %tmp.308 = getv %tmp.307 :screenHeight;
+        %tmp.309 = 2;
+        %tmp.310 = div %tmp.308 %tmp.309;
+        invoke %tmp.297 %tmp.298(%tmp.299, %tmp.300, %tmp.304, %tmp.310);
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 67 12 ]
+        %tmp.311 = getm $.Toybox.WatchUi;
+        %tmp.312 = getv function %tmp.311 :pushView;
+        %tmp.314 = lgetv %haglebuMapView.2;
+        %tmp.318 = getm $;
+        %tmp.319 = getv %tmp.318 :MapDelegate;
+        %tmp.321 = lgetv %haglebuMapView.2;
+        %tmp.315 = newc %tmp.319 (%tmp.321);
+        %tmp.322 = getm $.Toybox.WatchUi;
+        %tmp.323 = getv %tmp.322 :SLIDE_UP;
+        invoke %tmp.311 %tmp.312(%tmp.314, %tmp.315, %tmp.323);
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_FeatureDelegate_mc_19_37_69_8_stop:
+        goto @C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_FeatureDelegate_mc_19_8_179_8_if_end;
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_FeatureDelegate_mc_19_8_179_8_if_false:
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 69 15 ]
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_FeatureDelegate_mc_69_15_179_8_if_stmt:
+        %tmp.324 = lgetv %id.1;
+        %tmp.325 = getv function %tmp.324 :equals;
+        %tmp.326 = "westLift";
+        %tmp.327 = invoke %tmp.324 %tmp.325(%tmp.326);
+        bf %tmp.327 @C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_FeatureDelegate_mc_69_15_179_8_if_false;
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_FeatureDelegate_mc_69_15_179_8_if_true:
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_FeatureDelegate_mc_69_42_77_8_start:
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 71 12 ]
+        [ "C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_FeatureDelegate_mc_69_42_77_8_start" "C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_FeatureDelegate_mc_69_42_77_8_stop" ]
+        %menu.7 = local;
+        %tmp.331 = getm $;
+        %tmp.330 = getm $.Toybox.WatchUi;
+        %tmp.332 = getv function ? %tmp.330 :Menu2;
+        %tmp.333 = newd 1;
+        %tmp.335 = const :title;
+        %tmp.336 = "Lift Options";
+        %tmp.337 = dup %tmp.333;
+        %tmp.338 = aputv %tmp.337 %tmp.335 %tmp.336;
+        %tmp.328 = newc %tmp.332 (%tmp.338);
+        lputv %menu.7 %tmp.328;
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 72 12 ]
+        %tmp.339 = lgetv %menu.7;
+        %tmp.340 = getv function %tmp.339 :addItem;
+        %tmp.343 = getm $.Toybox.WatchUi;
+        %tmp.344 = getv function ? %tmp.343 :MenuItem;
+        %tmp.345 = "Guidence to Spot";
+        %tmp.346 = "Text Instructions";
+        %tmp.347 = "instructions";
+        %tmp.348 = null;
+        %tmp.341 = newc %tmp.344 (%tmp.345, %tmp.346, %tmp.347, %tmp.348);
+        invoke %tmp.339 %tmp.340(%tmp.341);
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 73 12 ]
+        %tmp.349 = lgetv %menu.7;
+        %tmp.350 = getv function %tmp.349 :addItem;
+        %tmp.353 = getm $.Toybox.WatchUi;
+        %tmp.354 = getv function ? %tmp.353 :MenuItem;
+        %tmp.355 = "Launch session";
+        %tmp.356 = null;
+        %tmp.357 = "launch";
+        %tmp.358 = null;
+        %tmp.351 = newc %tmp.354 (%tmp.355, %tmp.356, %tmp.357, %tmp.358);
+        invoke %tmp.349 %tmp.350(%tmp.351);
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 75 12 ]
+        %tmp.359 = getm $.Toybox.WatchUi;
+        %tmp.360 = getv function %tmp.359 :pushView;
+        %tmp.362 = lgetv %menu.7;
+        %tmp.366 = getm $;
+        %tmp.367 = getv %tmp.366 :decisonDelegate;
+        %tmp.363 = newc %tmp.367 ();
+        %tmp.368 = getm $.Toybox.WatchUi;
+        %tmp.369 = getv %tmp.368 :SLIDE_UP;
+        invoke %tmp.359 %tmp.360(%tmp.362, %tmp.363, %tmp.369);
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_FeatureDelegate_mc_69_42_77_8_stop:
+        goto @C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_FeatureDelegate_mc_69_15_179_8_if_end;
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_FeatureDelegate_mc_69_15_179_8_if_false:
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 77 15 ]
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_FeatureDelegate_mc_77_15_179_8_if_stmt:
+        %tmp.370 = lgetv %id.1;
+        %tmp.371 = getv function %tmp.370 :equals;
+        %tmp.372 = "trysilMap";
+        %tmp.373 = invoke %tmp.370 %tmp.371(%tmp.372);
+        bf %tmp.373 @C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_FeatureDelegate_mc_77_15_179_8_if_false;
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_FeatureDelegate_mc_77_15_179_8_if_true:
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_FeatureDelegate_mc_77_43_128_8_start:
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 78 12 ]
+        %tmp.374 = getm $.Toybox.System;
+        %tmp.375 = getv function %tmp.374 :println;
+        %tmp.376 = "trysilMap";
+        invoke %tmp.374 %tmp.375(%tmp.376);
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 79 12 ]
+        [ "C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_FeatureDelegate_mc_77_43_128_8_start" "C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_FeatureDelegate_mc_77_43_128_8_stop" ]
+        %trysilMapView.8 = local;
+        %tmp.380 = getm $;
+        %tmp.381 = getv %tmp.380 :MapView;
+        %tmp.377 = newc %tmp.381 ();
+        lputv %trysilMapView.8 %tmp.377;
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 82 12 ]
+        [ "C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_FeatureDelegate_mc_77_43_128_8_start" "C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_FeatureDelegate_mc_77_43_128_8_stop" ]
+        %mapMarkers.9 = local;
+        %tmp.382 = newa 0;
+        lputv %mapMarkers.9 %tmp.382;
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 85 12 ]
+        [ "C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_FeatureDelegate_mc_77_43_128_8_start" "C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_FeatureDelegate_mc_77_43_128_8_stop" ]
+        %marker.10 = local;
+        %tmp.385 = getm $.Toybox.WatchUi;
+        %tmp.386 = getv function ? %tmp.385 :MapMarker;
+        %tmp.390 = getv ? :Position;
+        %tmp.391 = getv function ? %tmp.390 :Location;
+        %tmp.392 = newd 3;
+        %tmp.394 = const :latitude;
+        %tmp.395 = 60.3407457;
+        %tmp.396 = dup %tmp.392;
+        %tmp.397 = aputv %tmp.396 %tmp.394 %tmp.395;
+        %tmp.399 = const :longitude;
+        %tmp.400 = 9.2082146;
+        %tmp.401 = dup %tmp.397;
+        %tmp.402 = aputv %tmp.401 %tmp.399 %tmp.400;
+        %tmp.404 = const :format;
+        %tmp.406 = const :degrees;
+        %tmp.407 = dup %tmp.402;
+        %tmp.408 = aputv %tmp.407 %tmp.404 %tmp.406;
+        %tmp.387 = newc %tmp.391 (%tmp.408);
+        %tmp.383 = newc %tmp.386 (%tmp.387);
+        lputv %marker.10 %tmp.383;
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 86 12 ]
+        %tmp.409 = lgetv %marker.10;
+        %tmp.410 = getv function %tmp.409 :setIcon;
+        %tmp.411 = getm $.Toybox.WatchUi;
+        %tmp.412 = getv function %tmp.411 :loadResource;
+        %tmp.413 = getm $;
+        %tmp.414 = getv %tmp.413 :Rez;
+        %tmp.415 = getv %tmp.414 :Drawables;
+        %tmp.416 = getv %tmp.415 :MapPin;
+        %tmp.417 = invoke %tmp.411 %tmp.412(%tmp.416);
+        %tmp.418 = as %tmp.417 BitmapResource;
+        %tmp.419 = 12;
+        %tmp.420 = 24;
+        invoke %tmp.409 %tmp.410(%tmp.418, %tmp.419, %tmp.420);
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 87 12 ]
+        %tmp.421 = lgetv %marker.10;
+        %tmp.422 = getv function %tmp.421 :setLabel;
+        %tmp.423 = "southLift";
+        invoke %tmp.421 %tmp.422(%tmp.423);
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 88 12 ]
+        %tmp.424 = lgetv %mapMarkers.9;
+        %tmp.425 = getv function %tmp.424 :add;
+        %tmp.427 = lgetv %marker.10;
+        invoke %tmp.424 %tmp.425(%tmp.427);
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 91 12 ]
+        %tmp.430 = getm $.Toybox.WatchUi;
+        %tmp.431 = getv function ? %tmp.430 :MapMarker;
+        %tmp.435 = getv ? :Position;
+        %tmp.436 = getv function ? %tmp.435 :Location;
+        %tmp.437 = newd 3;
+        %tmp.439 = const :latitude;
+        %tmp.440 = 60.345122300000014;
+        %tmp.441 = dup %tmp.437;
+        %tmp.442 = aputv %tmp.441 %tmp.439 %tmp.440;
+        %tmp.444 = const :longitude;
+        %tmp.445 = 9.1919601;
+        %tmp.446 = dup %tmp.442;
+        %tmp.447 = aputv %tmp.446 %tmp.444 %tmp.445;
+        %tmp.449 = const :format;
+        %tmp.451 = const :degrees;
+        %tmp.452 = dup %tmp.447;
+        %tmp.453 = aputv %tmp.452 %tmp.449 %tmp.451;
+        %tmp.432 = newc %tmp.436 (%tmp.453);
+        %tmp.428 = newc %tmp.431 (%tmp.432);
+        lputv %marker.10 %tmp.428;
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 92 12 ]
+        %tmp.454 = lgetv %marker.10;
+        %tmp.455 = getv function %tmp.454 :setIcon;
+        %tmp.456 = getm $.Toybox.WatchUi;
+        %tmp.457 = getv function %tmp.456 :loadResource;
+        %tmp.458 = getm $;
+        %tmp.459 = getv %tmp.458 :Rez;
+        %tmp.460 = getv %tmp.459 :Drawables;
+        %tmp.461 = getv %tmp.460 :MapPin;
+        %tmp.462 = invoke %tmp.456 %tmp.457(%tmp.461);
+        %tmp.463 = as %tmp.462 BitmapResource;
+        %tmp.464 = 12;
+        %tmp.465 = 24;
+        invoke %tmp.454 %tmp.455(%tmp.463, %tmp.464, %tmp.465);
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 93 12 ]
+        %tmp.466 = lgetv %marker.10;
+        %tmp.467 = getv function %tmp.466 :setLabel;
+        %tmp.468 = "westLift";
+        invoke %tmp.466 %tmp.467(%tmp.468);
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 94 12 ]
+        %tmp.469 = lgetv %mapMarkers.9;
+        %tmp.470 = getv function %tmp.469 :add;
+        %tmp.472 = lgetv %marker.10;
+        invoke %tmp.469 %tmp.470(%tmp.472);
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 97 12 ]
+        %tmp.475 = getm $.Toybox.WatchUi;
+        %tmp.476 = getv function ? %tmp.475 :MapMarker;
+        %tmp.480 = getv ? :Position;
+        %tmp.481 = getv function ? %tmp.480 :Location;
+        %tmp.482 = newd 3;
+        %tmp.484 = const :latitude;
+        %tmp.485 = 60.346291599999994;
+        %tmp.486 = dup %tmp.482;
+        %tmp.487 = aputv %tmp.486 %tmp.484 %tmp.485;
+        %tmp.489 = const :longitude;
+        %tmp.490 = 9.21105;
+        %tmp.491 = dup %tmp.487;
+        %tmp.492 = aputv %tmp.491 %tmp.489 %tmp.490;
+        %tmp.494 = const :format;
+        %tmp.496 = const :degrees;
+        %tmp.497 = dup %tmp.492;
+        %tmp.498 = aputv %tmp.497 %tmp.494 %tmp.496;
+        %tmp.477 = newc %tmp.481 (%tmp.498);
+        %tmp.473 = newc %tmp.476 (%tmp.477);
+        lputv %marker.10 %tmp.473;
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 98 12 ]
+        %tmp.499 = lgetv %marker.10;
+        %tmp.500 = getv function %tmp.499 :setIcon;
+        %tmp.501 = getm $.Toybox.WatchUi;
+        %tmp.502 = getv function %tmp.501 :loadResource;
+        %tmp.503 = getm $;
+        %tmp.504 = getv %tmp.503 :Rez;
+        %tmp.505 = getv %tmp.504 :Drawables;
+        %tmp.506 = getv %tmp.505 :MapPin;
+        %tmp.507 = invoke %tmp.501 %tmp.502(%tmp.506);
+        %tmp.508 = as %tmp.507 BitmapResource;
+        %tmp.509 = 12;
+        %tmp.510 = 24;
+        invoke %tmp.499 %tmp.500(%tmp.508, %tmp.509, %tmp.510);
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 99 12 ]
+        %tmp.511 = lgetv %marker.10;
+        %tmp.512 = getv function %tmp.511 :setLabel;
+        %tmp.513 = "westSlope1";
+        invoke %tmp.511 %tmp.512(%tmp.513);
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 100 12 ]
+        %tmp.514 = lgetv %mapMarkers.9;
+        %tmp.515 = getv function %tmp.514 :add;
+        %tmp.517 = lgetv %marker.10;
+        invoke %tmp.514 %tmp.515(%tmp.517);
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 103 12 ]
+        %tmp.520 = getm $.Toybox.WatchUi;
+        %tmp.521 = getv function ? %tmp.520 :MapMarker;
+        %tmp.525 = getv ? :Position;
+        %tmp.526 = getv function ? %tmp.525 :Location;
+        %tmp.527 = newd 3;
+        %tmp.529 = const :latitude;
+        %tmp.530 = 60.346291599999994;
+        %tmp.531 = dup %tmp.527;
+        %tmp.532 = aputv %tmp.531 %tmp.529 %tmp.530;
+        %tmp.534 = const :longitude;
+        %tmp.535 = 9.21105;
+        %tmp.536 = dup %tmp.532;
+        %tmp.537 = aputv %tmp.536 %tmp.534 %tmp.535;
+        %tmp.539 = const :format;
+        %tmp.541 = const :degrees;
+        %tmp.542 = dup %tmp.537;
+        %tmp.543 = aputv %tmp.542 %tmp.539 %tmp.541;
+        %tmp.522 = newc %tmp.526 (%tmp.543);
+        %tmp.518 = newc %tmp.521 (%tmp.522);
+        lputv %marker.10 %tmp.518;
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 104 12 ]
+        %tmp.544 = lgetv %marker.10;
+        %tmp.545 = getv function %tmp.544 :setIcon;
+        %tmp.546 = getm $.Toybox.WatchUi;
+        %tmp.547 = getv function %tmp.546 :loadResource;
+        %tmp.548 = getm $;
+        %tmp.549 = getv %tmp.548 :Rez;
+        %tmp.550 = getv %tmp.549 :Drawables;
+        %tmp.551 = getv %tmp.550 :MapPin;
+        %tmp.552 = invoke %tmp.546 %tmp.547(%tmp.551);
+        %tmp.553 = as %tmp.552 BitmapResource;
+        %tmp.554 = 12;
+        %tmp.555 = 24;
+        invoke %tmp.544 %tmp.545(%tmp.553, %tmp.554, %tmp.555);
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 105 12 ]
+        %tmp.556 = lgetv %marker.10;
+        %tmp.557 = getv function %tmp.556 :setLabel;
+        %tmp.558 = "westSlope2";
+        invoke %tmp.556 %tmp.557(%tmp.558);
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 106 12 ]
+        %tmp.559 = lgetv %mapMarkers.9;
+        %tmp.560 = getv function %tmp.559 :add;
+        %tmp.562 = lgetv %marker.10;
+        invoke %tmp.559 %tmp.560(%tmp.562);
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 109 12 ]
+        %tmp.565 = getm $.Toybox.WatchUi;
+        %tmp.566 = getv function ? %tmp.565 :MapMarker;
+        %tmp.570 = getv ? :Position;
+        %tmp.571 = getv function ? %tmp.570 :Location;
+        %tmp.572 = newd 3;
+        %tmp.574 = const :latitude;
+        %tmp.575 = 60.346913;
+        %tmp.576 = dup %tmp.572;
+        %tmp.577 = aputv %tmp.576 %tmp.574 %tmp.575;
+        %tmp.579 = const :longitude;
+        %tmp.580 = 9.2069336;
+        %tmp.581 = dup %tmp.577;
+        %tmp.582 = aputv %tmp.581 %tmp.579 %tmp.580;
+        %tmp.584 = const :format;
+        %tmp.586 = const :degrees;
+        %tmp.587 = dup %tmp.582;
+        %tmp.588 = aputv %tmp.587 %tmp.584 %tmp.586;
+        %tmp.567 = newc %tmp.571 (%tmp.588);
+        %tmp.563 = newc %tmp.566 (%tmp.567);
+        lputv %marker.10 %tmp.563;
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 110 12 ]
+        %tmp.589 = lgetv %marker.10;
+        %tmp.590 = getv function %tmp.589 :setIcon;
+        %tmp.591 = getm $.Toybox.WatchUi;
+        %tmp.592 = getv function %tmp.591 :loadResource;
+        %tmp.593 = getm $;
+        %tmp.594 = getv %tmp.593 :Rez;
+        %tmp.595 = getv %tmp.594 :Drawables;
+        %tmp.596 = getv %tmp.595 :MapPin;
+        %tmp.597 = invoke %tmp.591 %tmp.592(%tmp.596);
+        %tmp.598 = as %tmp.597 BitmapResource;
+        %tmp.599 = 12;
+        %tmp.600 = 24;
+        invoke %tmp.589 %tmp.590(%tmp.598, %tmp.599, %tmp.600);
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 111 12 ]
+        %tmp.601 = lgetv %marker.10;
+        %tmp.602 = getv function %tmp.601 :setLabel;
+        %tmp.603 = "westSlope3";
+        invoke %tmp.601 %tmp.602(%tmp.603);
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 112 12 ]
+        %tmp.604 = lgetv %mapMarkers.9;
+        %tmp.605 = getv function %tmp.604 :add;
+        %tmp.607 = lgetv %marker.10;
+        invoke %tmp.604 %tmp.605(%tmp.607);
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 115 12 ]
+        %tmp.608 = lgetv %trysilMapView.8;
+        %tmp.609 = getv function %tmp.608 :setMapMarker;
+        %tmp.611 = lgetv %mapMarkers.9;
+        invoke %tmp.608 %tmp.609(%tmp.611);
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 118 12 ]
+        [ "C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_FeatureDelegate_mc_77_43_128_8_start" "C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_FeatureDelegate_mc_77_43_128_8_stop" ]
+        %top_left.11 = local;
+        %tmp.615 = getv ? :Position;
+        %tmp.616 = getv function ? %tmp.615 :Location;
+        %tmp.617 = newd 3;
+        %tmp.619 = const :latitude;
+        %tmp.620 = 61.331715;
+        %tmp.621 = dup %tmp.617;
+        %tmp.622 = aputv %tmp.621 %tmp.619 %tmp.620;
+        %tmp.624 = const :longitude;
+        %tmp.625 = 12.154027;
+        %tmp.626 = dup %tmp.622;
+        %tmp.627 = aputv %tmp.626 %tmp.624 %tmp.625;
+        %tmp.629 = const :format;
+        %tmp.631 = const :degrees;
+        %tmp.632 = dup %tmp.627;
+        %tmp.633 = aputv %tmp.632 %tmp.629 %tmp.631;
+        %tmp.612 = newc %tmp.616 (%tmp.633);
+        lputv %top_left.11 %tmp.612;
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 119 12 ]
+        [ "C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_FeatureDelegate_mc_77_43_128_8_start" "C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_FeatureDelegate_mc_77_43_128_8_stop" ]
+        %bottom_right.12 = local;
+        %tmp.637 = getv ? :Position;
+        %tmp.638 = getv function ? %tmp.637 :Location;
+        %tmp.639 = newd 3;
+        %tmp.641 = const :latitude;
+        %tmp.642 = 61.297417;
+        %tmp.643 = dup %tmp.639;
+        %tmp.644 = aputv %tmp.643 %tmp.641 %tmp.642;
+        %tmp.646 = const :longitude;
+        %tmp.647 = 12.236848;
+        %tmp.648 = dup %tmp.644;
+        %tmp.649 = aputv %tmp.648 %tmp.646 %tmp.647;
+        %tmp.651 = const :format;
+        %tmp.653 = const :degrees;
+        %tmp.654 = dup %tmp.649;
+        %tmp.655 = aputv %tmp.654 %tmp.651 %tmp.653;
+        %tmp.634 = newc %tmp.638 (%tmp.655);
+        lputv %bottom_right.12 %tmp.634;
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 120 12 ]
+        %tmp.656 = lgetv %trysilMapView.8;
+        %tmp.657 = getv function %tmp.656 :setMapVisibleArea;
+        %tmp.659 = lgetv %top_left.11;
+        %tmp.661 = lgetv %bottom_right.12;
+        invoke %tmp.656 %tmp.657(%tmp.659, %tmp.661);
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 123 12 ]
+        %tmp.662 = lgetv %trysilMapView.8;
+        %tmp.663 = getv function %tmp.662 :setScreenVisibleArea;
+        %tmp.664 = 0;
+        %tmp.665 = 0;
+        %tmp.666 = getm $.Toybox.System;
+        %tmp.667 = getv function %tmp.666 :getDeviceSettings;
+        %tmp.668 = invoke %tmp.666 %tmp.667();
+        %tmp.669 = getv %tmp.668 :screenWidth;
+        %tmp.670 = getm $.Toybox.System;
+        %tmp.671 = getv function %tmp.670 :getDeviceSettings;
+        %tmp.672 = invoke %tmp.670 %tmp.671();
+        %tmp.673 = getv %tmp.672 :screenHeight;
+        %tmp.674 = 2;
+        %tmp.675 = div %tmp.673 %tmp.674;
+        invoke %tmp.662 %tmp.663(%tmp.664, %tmp.665, %tmp.669, %tmp.675);
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 126 12 ]
+        %tmp.676 = getm $.Toybox.WatchUi;
+        %tmp.677 = getv function %tmp.676 :pushView;
+        %tmp.679 = lgetv %trysilMapView.8;
+        %tmp.683 = getm $;
+        %tmp.684 = getv %tmp.683 :MapDelegate;
+        %tmp.686 = lgetv %trysilMapView.8;
+        %tmp.680 = newc %tmp.684 (%tmp.686);
+        %tmp.687 = getm $.Toybox.WatchUi;
+        %tmp.688 = getv %tmp.687 :SLIDE_UP;
+        invoke %tmp.676 %tmp.677(%tmp.679, %tmp.680, %tmp.688);
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_FeatureDelegate_mc_77_43_128_8_stop:
+        goto @C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_FeatureDelegate_mc_77_15_179_8_if_end;
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_FeatureDelegate_mc_77_15_179_8_if_false:
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 128 15 ]
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_FeatureDelegate_mc_128_15_179_8_if_stmt:
+        %tmp.689 = lgetv %id.1;
+        %tmp.690 = getv function %tmp.689 :equals;
+        %tmp.691 = "sotonMap";
+        %tmp.692 = invoke %tmp.689 %tmp.690(%tmp.691);
+        bf %tmp.692 @C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_FeatureDelegate_mc_128_15_179_8_if_false;
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_FeatureDelegate_mc_128_15_179_8_if_true:
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_FeatureDelegate_mc_128_42_177_8_start:
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 129 12 ]
+        %tmp.693 = getm $.Toybox.System;
+        %tmp.694 = getv function %tmp.693 :println;
+        %tmp.695 = "sotonMap";
+        invoke %tmp.693 %tmp.694(%tmp.695);
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 130 12 ]
+        [ "C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_FeatureDelegate_mc_128_42_177_8_start" "C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_FeatureDelegate_mc_128_42_177_8_stop" ]
+        %sotonMapView.13 = local;
+        %tmp.699 = getm $;
+        %tmp.700 = getv %tmp.699 :MapView;
+        %tmp.696 = newc %tmp.700 ();
+        lputv %sotonMapView.13 %tmp.696;
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 133 12 ]
+        [ "C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_FeatureDelegate_mc_128_42_177_8_start" "C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_FeatureDelegate_mc_128_42_177_8_stop" ]
+        %mapMarkers.14 = local;
+        %tmp.701 = newa 0;
+        lputv %mapMarkers.14 %tmp.701;
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 136 12 ]
+        [ "C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_FeatureDelegate_mc_128_42_177_8_start" "C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_FeatureDelegate_mc_128_42_177_8_stop" ]
+        %marker.15 = local;
+        %tmp.704 = getm $.Toybox.WatchUi;
+        %tmp.705 = getv function ? %tmp.704 :MapMarker;
+        %tmp.709 = getv ? :Position;
+        %tmp.710 = getv function ? %tmp.709 :Location;
+        %tmp.711 = newd 3;
+        %tmp.713 = const :latitude;
+        %tmp.714 = -1.397835;
+        %tmp.715 = dup %tmp.711;
+        %tmp.716 = aputv %tmp.715 %tmp.713 %tmp.714;
+        %tmp.718 = const :longitude;
+        %tmp.719 = 50.935669;
+        %tmp.720 = dup %tmp.716;
+        %tmp.721 = aputv %tmp.720 %tmp.718 %tmp.719;
+        %tmp.723 = const :format;
+        %tmp.725 = const :degrees;
+        %tmp.726 = dup %tmp.721;
+        %tmp.727 = aputv %tmp.726 %tmp.723 %tmp.725;
+        %tmp.706 = newc %tmp.710 (%tmp.727);
+        %tmp.702 = newc %tmp.705 (%tmp.706);
+        lputv %marker.15 %tmp.702;
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 137 12 ]
+        %tmp.728 = lgetv %marker.15;
+        %tmp.729 = getv function %tmp.728 :setIcon;
+        %tmp.730 = getm $.Toybox.WatchUi;
+        %tmp.731 = getv function %tmp.730 :loadResource;
+        %tmp.732 = getm $;
+        %tmp.733 = getv %tmp.732 :Rez;
+        %tmp.734 = getv %tmp.733 :Drawables;
+        %tmp.735 = getv %tmp.734 :MapPin;
+        %tmp.736 = invoke %tmp.730 %tmp.731(%tmp.735);
+        %tmp.737 = as %tmp.736 BitmapResource;
+        %tmp.738 = 12;
+        %tmp.739 = 24;
+        invoke %tmp.728 %tmp.729(%tmp.737, %tmp.738, %tmp.739);
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 138 12 ]
+        %tmp.740 = lgetv %marker.15;
+        %tmp.741 = getv function %tmp.740 :setLabel;
+        %tmp.742 = "northPath1";
+        invoke %tmp.740 %tmp.741(%tmp.742);
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 139 12 ]
+        %tmp.743 = lgetv %mapMarkers.14;
+        %tmp.744 = getv function %tmp.743 :add;
+        %tmp.746 = lgetv %marker.15;
+        invoke %tmp.743 %tmp.744(%tmp.746);
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 142 12 ]
+        %tmp.749 = getm $.Toybox.WatchUi;
+        %tmp.750 = getv function ? %tmp.749 :MapMarker;
+        %tmp.754 = getv ? :Position;
+        %tmp.755 = getv function ? %tmp.754 :Location;
+        %tmp.756 = newd 3;
+        %tmp.758 = const :latitude;
+        %tmp.759 = -1.395922;
+        %tmp.760 = dup %tmp.756;
+        %tmp.761 = aputv %tmp.760 %tmp.758 %tmp.759;
+        %tmp.763 = const :longitude;
+        %tmp.764 = 50.935619;
+        %tmp.765 = dup %tmp.761;
+        %tmp.766 = aputv %tmp.765 %tmp.763 %tmp.764;
+        %tmp.768 = const :format;
+        %tmp.770 = const :degrees;
+        %tmp.771 = dup %tmp.766;
+        %tmp.772 = aputv %tmp.771 %tmp.768 %tmp.770;
+        %tmp.751 = newc %tmp.755 (%tmp.772);
+        %tmp.747 = newc %tmp.750 (%tmp.751);
+        lputv %marker.15 %tmp.747;
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 143 12 ]
+        %tmp.773 = lgetv %marker.15;
+        %tmp.774 = getv function %tmp.773 :setIcon;
+        %tmp.775 = getm $.Toybox.WatchUi;
+        %tmp.776 = getv function %tmp.775 :loadResource;
+        %tmp.777 = getm $;
+        %tmp.778 = getv %tmp.777 :Rez;
+        %tmp.779 = getv %tmp.778 :Drawables;
+        %tmp.780 = getv %tmp.779 :MapPin;
+        %tmp.781 = invoke %tmp.775 %tmp.776(%tmp.780);
+        %tmp.782 = as %tmp.781 BitmapResource;
+        %tmp.783 = 12;
+        %tmp.784 = 24;
+        invoke %tmp.773 %tmp.774(%tmp.782, %tmp.783, %tmp.784);
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 144 12 ]
+        %tmp.785 = lgetv %marker.15;
+        %tmp.786 = getv function %tmp.785 :setLabel;
+        %tmp.787 = "northPath2";
+        invoke %tmp.785 %tmp.786(%tmp.787);
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 145 12 ]
+        %tmp.788 = lgetv %mapMarkers.14;
+        %tmp.789 = getv function %tmp.788 :add;
+        %tmp.791 = lgetv %marker.15;
+        invoke %tmp.788 %tmp.789(%tmp.791);
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 148 12 ]
+        %tmp.794 = getm $.Toybox.WatchUi;
+        %tmp.795 = getv function ? %tmp.794 :MapMarker;
+        %tmp.799 = getv ? :Position;
+        %tmp.800 = getv function ? %tmp.799 :Location;
+        %tmp.801 = newd 3;
+        %tmp.803 = const :latitude;
+        %tmp.804 = -1.397053;
+        %tmp.805 = dup %tmp.801;
+        %tmp.806 = aputv %tmp.805 %tmp.803 %tmp.804;
+        %tmp.808 = const :longitude;
+        %tmp.809 = 50.934493;
+        %tmp.810 = dup %tmp.806;
+        %tmp.811 = aputv %tmp.810 %tmp.808 %tmp.809;
+        %tmp.813 = const :format;
+        %tmp.815 = const :degrees;
+        %tmp.816 = dup %tmp.811;
+        %tmp.817 = aputv %tmp.816 %tmp.813 %tmp.815;
+        %tmp.796 = newc %tmp.800 (%tmp.817);
+        %tmp.792 = newc %tmp.795 (%tmp.796);
+        lputv %marker.15 %tmp.792;
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 149 12 ]
+        %tmp.818 = lgetv %marker.15;
+        %tmp.819 = getv function %tmp.818 :setIcon;
+        %tmp.820 = getm $.Toybox.WatchUi;
+        %tmp.821 = getv function %tmp.820 :loadResource;
+        %tmp.822 = getm $;
+        %tmp.823 = getv %tmp.822 :Rez;
+        %tmp.824 = getv %tmp.823 :Drawables;
+        %tmp.825 = getv %tmp.824 :MapPin;
+        %tmp.826 = invoke %tmp.820 %tmp.821(%tmp.825);
+        %tmp.827 = as %tmp.826 BitmapResource;
+        %tmp.828 = 12;
+        %tmp.829 = 24;
+        invoke %tmp.818 %tmp.819(%tmp.827, %tmp.828, %tmp.829);
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 150 12 ]
+        %tmp.830 = lgetv %marker.15;
+        %tmp.831 = getv function %tmp.830 :setLabel;
+        %tmp.832 = "SUSU";
+        invoke %tmp.830 %tmp.831(%tmp.832);
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 151 12 ]
+        %tmp.833 = lgetv %mapMarkers.14;
+        %tmp.834 = getv function %tmp.833 :add;
+        %tmp.836 = lgetv %marker.15;
+        invoke %tmp.833 %tmp.834(%tmp.836);
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 154 12 ]
+        %tmp.839 = getm $.Toybox.WatchUi;
+        %tmp.840 = getv function ? %tmp.839 :MapMarker;
+        %tmp.844 = getv ? :Position;
+        %tmp.845 = getv function ? %tmp.844 :Location;
+        %tmp.846 = newd 3;
+        %tmp.848 = const :latitude;
+        %tmp.849 = -1.395967;
+        %tmp.850 = dup %tmp.846;
+        %tmp.851 = aputv %tmp.850 %tmp.848 %tmp.849;
+        %tmp.853 = const :longitude;
+        %tmp.854 = 50.935128;
+        %tmp.855 = dup %tmp.851;
+        %tmp.856 = aputv %tmp.855 %tmp.853 %tmp.854;
+        %tmp.858 = const :format;
+        %tmp.860 = const :degrees;
+        %tmp.861 = dup %tmp.856;
+        %tmp.862 = aputv %tmp.861 %tmp.858 %tmp.860;
+        %tmp.841 = newc %tmp.845 (%tmp.862);
+        %tmp.837 = newc %tmp.840 (%tmp.841);
+        lputv %marker.15 %tmp.837;
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 155 12 ]
+        %tmp.863 = lgetv %marker.15;
+        %tmp.864 = getv function %tmp.863 :setIcon;
+        %tmp.865 = getm $.Toybox.WatchUi;
+        %tmp.866 = getv function %tmp.865 :loadResource;
+        %tmp.867 = getm $;
+        %tmp.868 = getv %tmp.867 :Rez;
+        %tmp.869 = getv %tmp.868 :Drawables;
+        %tmp.870 = getv %tmp.869 :MapPin;
+        %tmp.871 = invoke %tmp.865 %tmp.866(%tmp.870);
+        %tmp.872 = as %tmp.871 BitmapResource;
+        %tmp.873 = 12;
+        %tmp.874 = 24;
+        invoke %tmp.863 %tmp.864(%tmp.872, %tmp.873, %tmp.874);
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 156 12 ]
+        %tmp.875 = lgetv %marker.15;
+        %tmp.876 = getv function %tmp.875 :setLabel;
+        %tmp.877 = "Library";
+        invoke %tmp.875 %tmp.876(%tmp.877);
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 157 12 ]
+        %tmp.878 = lgetv %mapMarkers.14;
+        %tmp.879 = getv function %tmp.878 :add;
+        %tmp.881 = lgetv %marker.15;
+        invoke %tmp.878 %tmp.879(%tmp.881);
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 160 12 ]
+        %tmp.884 = getm $.Toybox.WatchUi;
+        %tmp.885 = getv function ? %tmp.884 :MapMarker;
+        %tmp.889 = getv ? :Position;
+        %tmp.890 = getv function ? %tmp.889 :Location;
+        %tmp.891 = newd 3;
+        %tmp.893 = const :latitude;
+        %tmp.894 = -1.396894;
+        %tmp.895 = dup %tmp.891;
+        %tmp.896 = aputv %tmp.895 %tmp.893 %tmp.894;
+        %tmp.898 = const :longitude;
+        %tmp.899 = 50.935567;
+        %tmp.900 = dup %tmp.896;
+        %tmp.901 = aputv %tmp.900 %tmp.898 %tmp.899;
+        %tmp.903 = const :format;
+        %tmp.905 = const :degrees;
+        %tmp.906 = dup %tmp.901;
+        %tmp.907 = aputv %tmp.906 %tmp.903 %tmp.905;
+        %tmp.886 = newc %tmp.890 (%tmp.907);
+        %tmp.882 = newc %tmp.885 (%tmp.886);
+        lputv %marker.15 %tmp.882;
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 161 12 ]
+        %tmp.908 = lgetv %marker.15;
+        %tmp.909 = getv function %tmp.908 :setIcon;
+        %tmp.910 = getm $.Toybox.WatchUi;
+        %tmp.911 = getv function %tmp.910 :loadResource;
+        %tmp.912 = getm $;
+        %tmp.913 = getv %tmp.912 :Rez;
+        %tmp.914 = getv %tmp.913 :Drawables;
+        %tmp.915 = getv %tmp.914 :MapPin;
+        %tmp.916 = invoke %tmp.910 %tmp.911(%tmp.915);
+        %tmp.917 = as %tmp.916 BitmapResource;
+        %tmp.918 = 12;
+        %tmp.919 = 24;
+        invoke %tmp.908 %tmp.909(%tmp.917, %tmp.918, %tmp.919);
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 162 12 ]
+        %tmp.920 = lgetv %marker.15;
+        %tmp.921 = getv function %tmp.920 :setLabel;
+        %tmp.922 = "Fountain";
+        invoke %tmp.920 %tmp.921(%tmp.922);
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 164 12 ]
+        %tmp.923 = lgetv %mapMarkers.14;
+        %tmp.924 = getv function %tmp.923 :add;
+        %tmp.926 = lgetv %marker.15;
+        invoke %tmp.923 %tmp.924(%tmp.926);
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 165 12 ]
+        %tmp.927 = lgetv %sotonMapView.13;
+        %tmp.928 = getv function %tmp.927 :setMapMarker;
+        %tmp.930 = lgetv %mapMarkers.14;
+        invoke %tmp.927 %tmp.928(%tmp.930);
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 168 12 ]
+        [ "C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_FeatureDelegate_mc_128_42_177_8_start" "C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_FeatureDelegate_mc_128_42_177_8_stop" ]
+        %top_left.16 = local;
+        %tmp.934 = getv ? :Position;
+        %tmp.935 = getv function ? %tmp.934 :Location;
+        %tmp.936 = newd 3;
+        %tmp.938 = const :latitude;
+        %tmp.939 = -1.399430;
+        %tmp.940 = dup %tmp.936;
+        %tmp.941 = aputv %tmp.940 %tmp.938 %tmp.939;
+        %tmp.943 = const :longitude;
+        %tmp.944 = 50.936903;
+        %tmp.945 = dup %tmp.941;
+        %tmp.946 = aputv %tmp.945 %tmp.943 %tmp.944;
+        %tmp.948 = const :format;
+        %tmp.950 = const :degrees;
+        %tmp.951 = dup %tmp.946;
+        %tmp.952 = aputv %tmp.951 %tmp.948 %tmp.950;
+        %tmp.931 = newc %tmp.935 (%tmp.952);
+        lputv %top_left.16 %tmp.931;
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 169 12 ]
+        [ "C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_FeatureDelegate_mc_128_42_177_8_start" "C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_FeatureDelegate_mc_128_42_177_8_stop" ]
+        %bottom_right.17 = local;
+        %tmp.956 = getv ? :Position;
+        %tmp.957 = getv function ? %tmp.956 :Location;
+        %tmp.958 = newd 3;
+        %tmp.960 = const :latitude;
+        %tmp.961 = -1.394101;
+        %tmp.962 = dup %tmp.958;
+        %tmp.963 = aputv %tmp.962 %tmp.960 %tmp.961;
+        %tmp.965 = const :longitude;
+        %tmp.966 = 50.934004;
+        %tmp.967 = dup %tmp.963;
+        %tmp.968 = aputv %tmp.967 %tmp.965 %tmp.966;
+        %tmp.970 = const :format;
+        %tmp.972 = const :degrees;
+        %tmp.973 = dup %tmp.968;
+        %tmp.974 = aputv %tmp.973 %tmp.970 %tmp.972;
+        %tmp.953 = newc %tmp.957 (%tmp.974);
+        lputv %bottom_right.17 %tmp.953;
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 170 12 ]
+        %tmp.975 = lgetv %sotonMapView.13;
+        %tmp.976 = getv function %tmp.975 :setMapVisibleArea;
+        %tmp.978 = lgetv %top_left.16;
+        %tmp.980 = lgetv %bottom_right.17;
+        invoke %tmp.975 %tmp.976(%tmp.978, %tmp.980);
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 173 12 ]
+        %tmp.981 = lgetv %sotonMapView.13;
+        %tmp.982 = getv function %tmp.981 :setScreenVisibleArea;
+        %tmp.983 = 0;
+        %tmp.984 = 0;
+        %tmp.985 = getm $.Toybox.System;
+        %tmp.986 = getv function %tmp.985 :getDeviceSettings;
+        %tmp.987 = invoke %tmp.985 %tmp.986();
+        %tmp.988 = getv %tmp.987 :screenWidth;
+        %tmp.989 = getm $.Toybox.System;
+        %tmp.990 = getv function %tmp.989 :getDeviceSettings;
+        %tmp.991 = invoke %tmp.989 %tmp.990();
+        %tmp.992 = getv %tmp.991 :screenHeight;
+        %tmp.993 = 2;
+        %tmp.994 = div %tmp.992 %tmp.993;
+        invoke %tmp.981 %tmp.982(%tmp.983, %tmp.984, %tmp.988, %tmp.994);
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 176 12 ]
+        %tmp.995 = getm $.Toybox.WatchUi;
+        %tmp.996 = getv function %tmp.995 :pushView;
+        %tmp.998 = lgetv %sotonMapView.13;
+        %tmp.1002 = getm $;
+        %tmp.1003 = getv %tmp.1002 :MapDelegate;
+        %tmp.1005 = lgetv %sotonMapView.13;
+        %tmp.999 = newc %tmp.1003 (%tmp.1005);
+        %tmp.1006 = getm $.Toybox.WatchUi;
+        %tmp.1007 = getv %tmp.1006 :SLIDE_UP;
+        invoke %tmp.995 %tmp.996(%tmp.998, %tmp.999, %tmp.1007);
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_FeatureDelegate_mc_128_42_177_8_stop:
+        goto @C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_FeatureDelegate_mc_128_15_179_8_if_end;
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_FeatureDelegate_mc_128_15_179_8_if_false:
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_FeatureDelegate_mc_177_15_179_8_start:
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 178 12 ]
+        %tmp.1008 = getm $.Toybox.WatchUi;
+        %tmp.1009 = getv function %tmp.1008 :requestUpdate;
+        invoke %tmp.1008 %tmp.1009();
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_FeatureDelegate_mc_177_15_179_8_stop:
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_FeatureDelegate_mc_128_15_179_8_if_end:
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_FeatureDelegate_mc_77_15_179_8_if_end:
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_FeatureDelegate_mc_69_15_179_8_if_end:
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_FeatureDelegate_mc_19_8_179_8_if_end:
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_FeatureDelegate_mc_16_55_181_4_stop:
+    }
+    [ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc"; @line = 183; ]
+    public
+    function onBack() as Void {
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_FeatureDelegate_mc_183_37_185_4_start:
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 184 8 ]
+        %tmp.1 = getm $.Toybox.WatchUi;
+        %tmp.2 = getv function %tmp.1 :popView;
+        %tmp.3 = getm $.Toybox.WatchUi;
+        %tmp.4 = getv %tmp.3 :SLIDE_DOWN;
+        invoke %tmp.1 %tmp.2(%tmp.4);
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_FeatureDelegate_mc_183_37_185_4_stop:
+    }
+    [ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc"; @line = 187; ]
+    public
+    function getMapType() as String {
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_FeatureDelegate_mc_187_43_189_4_start:
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc" 188 8 ]
+        %tmp.2 = getv ? :mapType;
+        ret %tmp.2;
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_FeatureDelegate_mc_187_43_189_4_stop:
+    }
+}
+[ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureDelegate.mc"; @line = 1; ]
+<init> {
+}

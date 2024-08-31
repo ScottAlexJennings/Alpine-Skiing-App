@@ -1,0 +1,79 @@
+[ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\MainView.mc"; @line = 1; ]
+import Toybox.Graphics;
+[ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\MainView.mc"; @line = 2; ]
+import Toybox.WatchUi;
+[ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\MainView.mc"; @line = 4; ]
+class MainView extends WatchUi.View{
+    [ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\MainView.mc"; @line = 4; ]
+    <init> {
+    }
+    [ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\MainView.mc"; @line = 4; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\MainView.mc"; @line = 6; @position = 15; ]
+    public
+    var position = null;
+    [ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\MainView.mc"; @line = 8; ]
+    public
+    function initialize() as Void {
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_MainView_mc_8_33_10_4_start:
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\MainView.mc" 9 8 ]
+        %tmp.2 = getv ? :View;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_MainView_mc_8_33_10_4_stop:
+    }
+    [ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\MainView.mc"; @line = 13; ]
+    public
+    function onLayout(dc as Dc) as Void {
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_MainView_mc_13_47_15_4_start:
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\MainView.mc" 14 8 ]
+        %tmp.1 = self;
+        %tmp.2 = getv function %tmp.1 :setLayout;
+        %tmp.3 = getm $;
+        %tmp.4 = getv %tmp.3 :Rez;
+        %tmp.5 = getv %tmp.4 :Layouts;
+        %tmp.6 = getv function %tmp.5 :MainLayout;
+        %tmp.8 = lgetv %dc;
+        %tmp.9 = invoke %tmp.5 %tmp.6(%tmp.8);
+        invoke %tmp.1 %tmp.2(%tmp.9);
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_MainView_mc_13_47_15_4_stop:
+    }
+    [ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\MainView.mc"; @line = 20; ]
+    public
+    function onShow() as Void {
+    }
+    [ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\MainView.mc"; @line = 24; ]
+    public
+    function onUpdate(dc as Dc) as Void {
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_MainView_mc_24_47_27_4_start:
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\MainView.mc" 26 8 ]
+        %tmp.2 = getv ? :View;
+        %tmp.3 = getv function %tmp.2 :onUpdate;
+        %tmp.5 = lgetv %dc;
+        invoke %tmp.2 %tmp.3(%tmp.5);
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_MainView_mc_24_47_27_4_stop:
+    }
+    [ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\MainView.mc"; @line = 32; ]
+    public
+    function onHide() as Void {
+    }
+    [ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\MainView.mc"; @line = 35; ]
+    public
+    function setPosition(info) as Void {
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_MainView_mc_35_45_38_4_start:
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\MainView.mc" 36 8 ]
+        %tmp.1 = lgetv %info;
+        %tmp.2 = getv %tmp.1 :position;
+        putv self :position %tmp.2;
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\MainView.mc" 37 8 ]
+        %tmp.3 = getm $.Toybox.WatchUi;
+        %tmp.4 = getv function %tmp.3 :requestUpdate;
+        invoke %tmp.3 %tmp.4();
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_MainView_mc_35_45_38_4_stop:
+    }
+}
+[ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\MainView.mc"; @line = 1; ]
+<init> {
+}

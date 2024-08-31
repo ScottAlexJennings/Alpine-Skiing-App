@@ -1,0 +1,92 @@
+[ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\MapDelegate.mc"; @line = 1; ]
+import Toybox.Lang;
+[ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\MapDelegate.mc"; @line = 2; ]
+import Toybox.WatchUi;
+[ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\MapDelegate.mc"; @line = 5; ]
+class MapDelegate extends WatchUi.BehaviorDelegate{
+    [ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\MapDelegate.mc"; @line = 5; ]
+    <init> {
+    }
+    [ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\MapDelegate.mc"; @line = 5; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\MapDelegate.mc"; @line = 7; @position = 16; ]
+    private
+    var _view as MapView;
+    //! Constructor
+    //! @param view The associated map view
+    [ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\MapDelegate.mc"; @line = 11; ]
+    public
+    function initialize(view as MapView) as Void {
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_MapDelegate_mc_11_48_14_4_start:
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\MapDelegate.mc" 12 8 ]
+        %tmp.2 = getv ? :BehaviorDelegate;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\MapDelegate.mc" 13 8 ]
+        %tmp.5 = lgetv %view;
+        putv self :_view %tmp.5;
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_MapDelegate_mc_11_48_14_4_stop:
+    }
+    //! Handle the back event
+    //! @return true if handled, false otherwise
+    [ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\MapDelegate.mc"; @line = 18; ]
+    public
+    function onBack() as Boolean {
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_MapDelegate_mc_18_40_27_4_start:
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\MapDelegate.mc" 20 8 ]
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_MapDelegate_mc_20_8_25_8_if_stmt:
+        %tmp.2 = getv ? :_view;
+        %tmp.3 = getv function %tmp.2 :getMapMode;
+        %tmp.4 = invoke %tmp.2 %tmp.3();
+        %tmp.5 = getm $.Toybox.WatchUi;
+        %tmp.6 = getv %tmp.5 :MAP_MODE_PREVIEW;
+        %tmp.7 = eq %tmp.4 %tmp.6;
+        bf %tmp.7 @C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_MapDelegate_mc_20_8_25_8_if_false;
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_MapDelegate_mc_20_8_25_8_if_true:
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_MapDelegate_mc_20_60_22_8_start:
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\MapDelegate.mc" 21 12 ]
+        %tmp.8 = getm $.Toybox.WatchUi;
+        %tmp.9 = getv function %tmp.8 :popView;
+        %tmp.10 = getm $.Toybox.WatchUi;
+        %tmp.11 = getv %tmp.10 :SLIDE_UP;
+        invoke %tmp.8 %tmp.9(%tmp.11);
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_MapDelegate_mc_20_60_22_8_stop:
+        goto @C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_MapDelegate_mc_20_8_25_8_if_end;
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_MapDelegate_mc_20_8_25_8_if_false:
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_MapDelegate_mc_22_15_25_8_start:
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\MapDelegate.mc" 24 12 ]
+        %tmp.13 = getv ? :_view;
+        %tmp.14 = getv function %tmp.13 :setMapMode;
+        %tmp.15 = getm $.Toybox.WatchUi;
+        %tmp.16 = getv %tmp.15 :MAP_MODE_PREVIEW;
+        invoke %tmp.13 %tmp.14(%tmp.16);
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_MapDelegate_mc_22_15_25_8_stop:
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_MapDelegate_mc_20_8_25_8_if_end:
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\MapDelegate.mc" 26 8 ]
+        %tmp.17 = true;
+        ret %tmp.17;
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_MapDelegate_mc_18_40_27_4_stop:
+    }
+    //! Handle the select button
+    //! @return true if handled, false otherwise
+    [ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\MapDelegate.mc"; @line = 31; ]
+    public
+    function onSelect() as Boolean {
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_MapDelegate_mc_31_42_35_4_start:
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\MapDelegate.mc" 33 8 ]
+        %tmp.2 = getv ? :_view;
+        %tmp.3 = getv function %tmp.2 :setMapMode;
+        %tmp.4 = getm $.Toybox.WatchUi;
+        %tmp.5 = getv %tmp.4 :MAP_MODE_BROWSE;
+        invoke %tmp.2 %tmp.3(%tmp.5);
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\MapDelegate.mc" 34 8 ]
+        %tmp.6 = true;
+        ret %tmp.6;
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_MapDelegate_mc_31_42_35_4_stop:
+    }
+}
+[ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\MapDelegate.mc"; @line = 1; ]
+<init> {
+}

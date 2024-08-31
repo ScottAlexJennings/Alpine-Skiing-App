@@ -1,0 +1,139 @@
+[ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\AlpineAssistMenuDelegate.mc"; @line = 1; ]
+import Toybox.Lang;
+[ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\AlpineAssistMenuDelegate.mc"; @line = 2; ]
+import Toybox.System;
+[ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\AlpineAssistMenuDelegate.mc"; @line = 3; ]
+import Toybox.WatchUi;
+[ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\AlpineAssistMenuDelegate.mc"; @line = 4; ]
+import Toybox.PersistedContent;
+[ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\AlpineAssistMenuDelegate.mc"; @line = 6; ]
+class AlpineAssistMenuDelegate extends WatchUi.Menu2InputDelegate{
+    [ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\AlpineAssistMenuDelegate.mc"; @line = 6; ]
+    <init> {
+    }
+    [ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\AlpineAssistMenuDelegate.mc"; @line = 6; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\AlpineAssistMenuDelegate.mc"; @line = 8; ]
+    function initialize() as Void {
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_AlpineAssistMenuDelegate_mc_8_26_10_4_start:
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\AlpineAssistMenuDelegate.mc" 9 8 ]
+        %tmp.2 = getv ? :Menu2InputDelegate;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_AlpineAssistMenuDelegate_mc_8_26_10_4_stop:
+    }
+    [ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\AlpineAssistMenuDelegate.mc"; @line = 12; ]
+    function onSelect(item as MenuItem) as Void {
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_AlpineAssistMenuDelegate_mc_12_48_44_4_start:
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\AlpineAssistMenuDelegate.mc" 13 8 ]
+        [ "C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_AlpineAssistMenuDelegate_mc_12_48_44_4_start" "C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_AlpineAssistMenuDelegate_mc_12_48_44_4_stop" ]
+        %id.1 = local;
+        %tmp.1 = lgetv %item;
+        %tmp.2 = getv function %tmp.1 :getId;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        %tmp.4 = as %tmp.3 String;
+        lputv %id.1 %tmp.4;
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\AlpineAssistMenuDelegate.mc" 15 8 ]
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_AlpineAssistMenuDelegate_mc_15_8_30_8_if_stmt:
+        %tmp.5 = lgetv %id.1;
+        %tmp.6 = getv function %tmp.5 :equals;
+        %tmp.7 = "content.getName()";
+        %tmp.8 = invoke %tmp.5 %tmp.6(%tmp.7);
+        bf %tmp.8 @C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_AlpineAssistMenuDelegate_mc_15_8_30_8_if_false;
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_AlpineAssistMenuDelegate_mc_15_8_30_8_if_true:
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_AlpineAssistMenuDelegate_mc_15_44_18_8_start:
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\AlpineAssistMenuDelegate.mc" 16 12 ]
+        %tmp.9 = getm $.Toybox.System;
+        %tmp.10 = getv function %tmp.9 :println;
+        %tmp.12 = lgetv %id.1;
+        invoke %tmp.9 %tmp.10(%tmp.12);
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_AlpineAssistMenuDelegate_mc_15_44_18_8_stop:
+        goto @C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_AlpineAssistMenuDelegate_mc_15_8_30_8_if_end;
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_AlpineAssistMenuDelegate_mc_15_8_30_8_if_false:
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\AlpineAssistMenuDelegate.mc" 18 15 ]
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_AlpineAssistMenuDelegate_mc_18_15_30_8_if_stmt:
+        %tmp.13 = lgetv %id.1;
+        %tmp.14 = getv function %tmp.13 :equals;
+        %tmp.15 = "southampton";
+        %tmp.16 = invoke %tmp.13 %tmp.14(%tmp.15);
+        bf %tmp.16 @C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_AlpineAssistMenuDelegate_mc_18_15_30_8_if_false;
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_AlpineAssistMenuDelegate_mc_18_15_30_8_if_true:
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_AlpineAssistMenuDelegate_mc_18_45_21_8_start:
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\AlpineAssistMenuDelegate.mc" 19 12 ]
+        %tmp.17 = getm $.Toybox.System;
+        %tmp.18 = getv function %tmp.17 :println;
+        %tmp.19 = "southampton";
+        invoke %tmp.17 %tmp.18(%tmp.19);
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_AlpineAssistMenuDelegate_mc_18_45_21_8_stop:
+        goto @C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_AlpineAssistMenuDelegate_mc_18_15_30_8_if_end;
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_AlpineAssistMenuDelegate_mc_18_15_30_8_if_false:
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\AlpineAssistMenuDelegate.mc" 21 15 ]
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_AlpineAssistMenuDelegate_mc_21_15_30_8_if_stmt:
+        %tmp.20 = lgetv %id.1;
+        %tmp.21 = getv function %tmp.20 :equals;
+        %tmp.22 = "haglebu";
+        %tmp.23 = invoke %tmp.20 %tmp.21(%tmp.22);
+        bf %tmp.23 @C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_AlpineAssistMenuDelegate_mc_21_15_30_8_if_false;
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_AlpineAssistMenuDelegate_mc_21_15_30_8_if_true:
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_AlpineAssistMenuDelegate_mc_21_41_25_8_start:
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\AlpineAssistMenuDelegate.mc" 22 12 ]
+        %tmp.24 = getm $.Toybox.System;
+        %tmp.25 = getv function %tmp.24 :println;
+        %tmp.26 = "haglebu";
+        invoke %tmp.24 %tmp.25(%tmp.26);
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\AlpineAssistMenuDelegate.mc" 23 12 ]
+        %tmp.27 = getm $.Toybox.System;
+        %tmp.28 = getv function %tmp.27 :println;
+        %tmp.30 = getv ? :data;
+        %tmp.31 = getv %tmp.30 :southLift;
+        invoke %tmp.27 %tmp.28(%tmp.31);
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_AlpineAssistMenuDelegate_mc_21_41_25_8_stop:
+        goto @C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_AlpineAssistMenuDelegate_mc_21_15_30_8_if_end;
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_AlpineAssistMenuDelegate_mc_21_15_30_8_if_false:
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\AlpineAssistMenuDelegate.mc" 25 15 ]
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_AlpineAssistMenuDelegate_mc_25_15_30_8_if_stmt:
+        %tmp.32 = lgetv %id.1;
+        %tmp.33 = getv function %tmp.32 :equals;
+        %tmp.34 = "trysil";
+        %tmp.35 = invoke %tmp.32 %tmp.33(%tmp.34);
+        bf %tmp.35 @C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_AlpineAssistMenuDelegate_mc_25_15_30_8_if_false;
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_AlpineAssistMenuDelegate_mc_25_15_30_8_if_true:
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_AlpineAssistMenuDelegate_mc_25_40_28_8_start:
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\AlpineAssistMenuDelegate.mc" 26 12 ]
+        %tmp.36 = getm $.Toybox.System;
+        %tmp.37 = getv function %tmp.36 :println;
+        %tmp.38 = "trysil";
+        invoke %tmp.36 %tmp.37(%tmp.38);
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_AlpineAssistMenuDelegate_mc_25_40_28_8_stop:
+        goto @C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_AlpineAssistMenuDelegate_mc_25_15_30_8_if_end;
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_AlpineAssistMenuDelegate_mc_25_15_30_8_if_false:
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_AlpineAssistMenuDelegate_mc_28_15_30_8_start:
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\AlpineAssistMenuDelegate.mc" 29 12 ]
+        %tmp.39 = getm $.Toybox.WatchUi;
+        %tmp.40 = getv function %tmp.39 :requestUpdate;
+        invoke %tmp.39 %tmp.40();
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_AlpineAssistMenuDelegate_mc_28_15_30_8_stop:
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_AlpineAssistMenuDelegate_mc_25_15_30_8_if_end:
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_AlpineAssistMenuDelegate_mc_21_15_30_8_if_end:
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_AlpineAssistMenuDelegate_mc_18_15_30_8_if_end:
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_AlpineAssistMenuDelegate_mc_15_8_30_8_if_end:
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_AlpineAssistMenuDelegate_mc_12_48_44_4_stop:
+    }
+    [ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\AlpineAssistMenuDelegate.mc"; @line = 46; ]
+    public
+    function onBack() as Void {
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_AlpineAssistMenuDelegate_mc_46_37_48_4_start:
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\AlpineAssistMenuDelegate.mc" 47 8 ]
+        %tmp.1 = getm $.Toybox.WatchUi;
+        %tmp.2 = getv function %tmp.1 :popView;
+        %tmp.3 = getm $.Toybox.WatchUi;
+        %tmp.4 = getv %tmp.3 :SLIDE_DOWN;
+        invoke %tmp.1 %tmp.2(%tmp.4);
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_AlpineAssistMenuDelegate_mc_46_37_48_4_stop:
+    }
+}
+[ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\AlpineAssistMenuDelegate.mc"; @line = 1; ]
+<init> {
+}

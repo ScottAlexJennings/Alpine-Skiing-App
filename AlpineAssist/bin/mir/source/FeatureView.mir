@@ -1,0 +1,80 @@
+[ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureView.mc"; @line = 1; ]
+import Toybox.Position;
+[ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureView.mc"; @line = 2; ]
+import Toybox.System;
+[ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureView.mc"; @line = 3; ]
+import Toybox.WatchUi;
+[ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureView.mc"; @line = 5; ]
+class FeatureView extends WatchUi.View{
+    [ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureView.mc"; @line = 5; ]
+    <init> {
+    }
+    [ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureView.mc"; @line = 5; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureView.mc"; @line = 7; ]
+    function initialize() as Void {
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_FeatureView_mc_7_26_10_4_start:
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureView.mc" 8 8 ]
+        %tmp.2 = getv ? :View;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureView.mc" 9 8 ]
+        %tmp.4 = getm $.Toybox.Position;
+        %tmp.5 = getv function %tmp.4 :enableLocationEvents;
+        %tmp.6 = getm $.Toybox.Position;
+        %tmp.7 = getv %tmp.6 :LOCATION_ONE_SHOT;
+        %tmp.8 = self;
+        %tmp.9 = getv function %tmp.8 :method;
+        %tmp.11 = const :onPosition;
+        %tmp.12 = invoke %tmp.8 %tmp.9(%tmp.11);
+        invoke %tmp.4 %tmp.5(%tmp.7, %tmp.12);
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_FeatureView_mc_7_26_10_4_stop:
+    }
+    [ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureView.mc"; @line = 12; ]
+    public
+    function onPosition(info as Info) as Void {
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_FeatureView_mc_12_53_21_4_start:
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureView.mc" 14 8 ]
+        [ "C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_FeatureView_mc_12_53_21_4_start" "C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_FeatureView_mc_12_53_21_4_stop" ]
+        %position.1 = local;
+        %tmp.1 = lgetv %info;
+        %tmp.2 = getv %tmp.1 :position;
+        lputv %position.1 %tmp.2;
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureView.mc" 16 8 ]
+        %tmp.3 = getm $.Toybox.System;
+        %tmp.4 = getv function %tmp.3 :println;
+        %tmp.5 = "lat = ";
+        %tmp.6 = lgetv %position.1;
+        %tmp.7 = getv function %tmp.6 :toDegrees;
+        %tmp.8 = invoke %tmp.6 %tmp.7();
+        %tmp.9 = 0;
+        %tmp.10 = agetv %tmp.8 %tmp.9;
+        %tmp.11 = getv function %tmp.10 :toString;
+        %tmp.12 = invoke %tmp.10 %tmp.11();
+        %tmp.13 = add %tmp.5 %tmp.12;
+        invoke %tmp.3 %tmp.4(%tmp.13);
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureView.mc" 17 8 ]
+        %tmp.14 = getm $.Toybox.System;
+        %tmp.15 = getv function %tmp.14 :println;
+        %tmp.16 = "lon = ";
+        %tmp.17 = lgetv %position.1;
+        %tmp.18 = getv function %tmp.17 :toDegrees;
+        %tmp.19 = invoke %tmp.17 %tmp.18();
+        %tmp.20 = 1;
+        %tmp.21 = agetv %tmp.19 %tmp.20;
+        %tmp.22 = getv function %tmp.21 :toString;
+        %tmp.23 = invoke %tmp.21 %tmp.22();
+        %tmp.24 = add %tmp.16 %tmp.23;
+        invoke %tmp.14 %tmp.15(%tmp.24);
+[ "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureView.mc" 19 8 ]
+        %tmp.25 = getm $.Toybox.WatchUi;
+        %tmp.26 = getv function %tmp.25 :requestUpdate;
+        invoke %tmp.25 %tmp.26();
+C_Users_scott_Documents_Garmin_Apps_AlpineAssist_source_FeatureView_mc_12_53_21_4_stop:
+    }
+}
+[ @file = "C:\Users\scott\Documents\Garmin Apps\AlpineAssist\source\FeatureView.mc"; @line = 1; ]
+<init> {
+}

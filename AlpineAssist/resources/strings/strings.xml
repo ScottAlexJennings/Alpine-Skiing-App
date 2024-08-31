@@ -1,0 +1,8 @@
+<strings>
+    <string id="AppName">AlpineAssist</string>
+
+    <string id="prompt">Press menu button\n to show Resorts</string>
+
+    <string id="lead">Get Guidence Route</string>
+    <string id="open">Open course</string>
+</strings>
